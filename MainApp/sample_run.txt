@@ -1,0 +1,202 @@
+Epoch 1/100
+200/200 [==============================] - 1s 4ms/step - loss: 36.5471 - mean_absolute_error: 36.5471 - val_loss: 34.5118 - val_mean_absolute_error: 34.5118
+Epoch 2/100
+200/200 [==============================] - 0s 2ms/step - loss: 28.8801 - mean_absolute_error: 28.8801 - val_loss: 25.9459 - val_mean_absolute_error: 25.9459
+Epoch 3/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9824 - mean_absolute_error: 25.9824 - val_loss: 25.9512 - val_mean_absolute_error: 25.9512
+Epoch 4/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9880 - mean_absolute_error: 25.9880 - val_loss: 25.9658 - val_mean_absolute_error: 25.9658
+Epoch 5/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9873 - mean_absolute_error: 25.9873 - val_loss: 25.9444 - val_mean_absolute_error: 25.9444
+Epoch 6/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9875 - mean_absolute_error: 25.9875 - val_loss: 25.9511 - val_mean_absolute_error: 25.9511
+Epoch 7/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9974 - mean_absolute_error: 25.9974 - val_loss: 25.9463 - val_mean_absolute_error: 25.9463
+Epoch 8/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9951 - mean_absolute_error: 25.9951 - val_loss: 25.9539 - val_mean_absolute_error: 25.9539
+Epoch 9/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9873 - mean_absolute_error: 25.9873 - val_loss: 25.9504 - val_mean_absolute_error: 25.9504
+Epoch 10/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9895 - mean_absolute_error: 25.9895 - val_loss: 25.9578 - val_mean_absolute_error: 25.9578
+Epoch 11/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9887 - mean_absolute_error: 25.9887 - val_loss: 25.9467 - val_mean_absolute_error: 25.9467
+Epoch 12/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9891 - mean_absolute_error: 25.9891 - val_loss: 25.9463 - val_mean_absolute_error: 25.9463
+Epoch 13/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9983 - mean_absolute_error: 25.9983 - val_loss: 25.9463 - val_mean_absolute_error: 25.9463
+Epoch 14/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9902 - mean_absolute_error: 25.9902 - val_loss: 25.9513 - val_mean_absolute_error: 25.9513
+Epoch 15/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9793 - mean_absolute_error: 25.9793 - val_loss: 25.9446 - val_mean_absolute_error: 25.9446
+Epoch 16/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9981 - mean_absolute_error: 25.9981 - val_loss: 25.9548 - val_mean_absolute_error: 25.9548
+Epoch 17/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9788 - mean_absolute_error: 25.9788 - val_loss: 25.9464 - val_mean_absolute_error: 25.9464
+Epoch 18/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9859 - mean_absolute_error: 25.9859 - val_loss: 25.9479 - val_mean_absolute_error: 25.9479
+Epoch 19/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9916 - mean_absolute_error: 25.9916 - val_loss: 25.9464 - val_mean_absolute_error: 25.9464
+Epoch 20/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9947 - mean_absolute_error: 25.9947 - val_loss: 25.9500 - val_mean_absolute_error: 25.9500
+Epoch 21/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9965 - mean_absolute_error: 25.9965 - val_loss: 25.9471 - val_mean_absolute_error: 25.9471
+Epoch 22/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9935 - mean_absolute_error: 25.9935 - val_loss: 25.9449 - val_mean_absolute_error: 25.9449
+Epoch 23/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9860 - mean_absolute_error: 25.9860 - val_loss: 25.9445 - val_mean_absolute_error: 25.9445
+Epoch 24/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9922 - mean_absolute_error: 25.9922 - val_loss: 25.9454 - val_mean_absolute_error: 25.9454
+Epoch 25/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9942 - mean_absolute_error: 25.9942 - val_loss: 25.9468 - val_mean_absolute_error: 25.9468
+Epoch 26/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9934 - mean_absolute_error: 25.9934 - val_loss: 25.9635 - val_mean_absolute_error: 25.9635
+Epoch 27/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9983 - mean_absolute_error: 25.9983 - val_loss: 25.9497 - val_mean_absolute_error: 25.9497
+Epoch 28/100
+200/200 [==============================] - 1s 3ms/step - loss: 26.0015 - mean_absolute_error: 26.0015 - val_loss: 25.9537 - val_mean_absolute_error: 25.9537
+Epoch 29/100
+200/200 [==============================] - 0s 2ms/step - loss: 26.0015 - mean_absolute_error: 26.0015 - val_loss: 25.9451 - val_mean_absolute_error: 25.9451
+Epoch 30/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9895 - mean_absolute_error: 25.9895 - val_loss: 25.9550 - val_mean_absolute_error: 25.9550
+Epoch 31/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9896 - mean_absolute_error: 25.9896 - val_loss: 25.9501 - val_mean_absolute_error: 25.9501
+Epoch 32/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9927 - mean_absolute_error: 25.9927 - val_loss: 25.9470 - val_mean_absolute_error: 25.9470
+Epoch 33/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9939 - mean_absolute_error: 25.9939 - val_loss: 25.9496 - val_mean_absolute_error: 25.9496
+Epoch 34/100
+200/200 [==============================] - 0s 2ms/step - loss: 26.0044 - mean_absolute_error: 26.0044 - val_loss: 25.9539 - val_mean_absolute_error: 25.9539
+Epoch 35/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9864 - mean_absolute_error: 25.9864 - val_loss: 25.9449 - val_mean_absolute_error: 25.9449
+Epoch 36/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9849 - mean_absolute_error: 25.9849 - val_loss: 25.9563 - val_mean_absolute_error: 25.9563
+Epoch 37/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9870 - mean_absolute_error: 25.9870 - val_loss: 25.9447 - val_mean_absolute_error: 25.9447
+Epoch 38/100
+200/200 [==============================] - 0s 2ms/step - loss: 26.0014 - mean_absolute_error: 26.0014 - val_loss: 25.9491 - val_mean_absolute_error: 25.9491
+Epoch 39/100
+200/200 [==============================] - 0s 2ms/step - loss: 26.0042 - mean_absolute_error: 26.0042 - val_loss: 25.9465 - val_mean_absolute_error: 25.9465
+Epoch 40/100
+200/200 [==============================] - 1s 3ms/step - loss: 25.9904 - mean_absolute_error: 25.9904 - val_loss: 25.9476 - val_mean_absolute_error: 25.9476
+Epoch 41/100
+200/200 [==============================] - 1s 3ms/step - loss: 25.9892 - mean_absolute_error: 25.9892 - val_loss: 25.9454 - val_mean_absolute_error: 25.9454
+Epoch 42/100
+200/200 [==============================] - 1s 4ms/step - loss: 25.9858 - mean_absolute_error: 25.9858 - val_loss: 25.9555 - val_mean_absolute_error: 25.9555
+Epoch 43/100
+200/200 [==============================] - 1s 3ms/step - loss: 25.9898 - mean_absolute_error: 25.9898 - val_loss: 25.9689 - val_mean_absolute_error: 25.9689
+Epoch 44/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9981 - mean_absolute_error: 25.9981 - val_loss: 25.9455 - val_mean_absolute_error: 25.9455
+Epoch 45/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9906 - mean_absolute_error: 25.9906 - val_loss: 25.9468 - val_mean_absolute_error: 25.9468
+Epoch 46/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9972 - mean_absolute_error: 25.9972 - val_loss: 25.9446 - val_mean_absolute_error: 25.9446
+Epoch 47/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9883 - mean_absolute_error: 25.9883 - val_loss: 25.9466 - val_mean_absolute_error: 25.9466
+Epoch 48/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9950 - mean_absolute_error: 25.9950 - val_loss: 25.9459 - val_mean_absolute_error: 25.9459
+Epoch 49/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9842 - mean_absolute_error: 25.9842 - val_loss: 25.9467 - val_mean_absolute_error: 25.9467
+Epoch 50/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9887 - mean_absolute_error: 25.9887 - val_loss: 25.9455 - val_mean_absolute_error: 25.9455
+Epoch 51/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9957 - mean_absolute_error: 25.9957 - val_loss: 25.9461 - val_mean_absolute_error: 25.9461
+Epoch 52/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9870 - mean_absolute_error: 25.9870 - val_loss: 25.9554 - val_mean_absolute_error: 25.9554
+Epoch 53/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9949 - mean_absolute_error: 25.9949 - val_loss: 25.9457 - val_mean_absolute_error: 25.9457
+Epoch 54/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9928 - mean_absolute_error: 25.9928 - val_loss: 25.9477 - val_mean_absolute_error: 25.9477
+Epoch 55/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9861 - mean_absolute_error: 25.9861 - val_loss: 25.9475 - val_mean_absolute_error: 25.9475
+Epoch 56/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9924 - mean_absolute_error: 25.9924 - val_loss: 25.9475 - val_mean_absolute_error: 25.9475
+Epoch 57/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9951 - mean_absolute_error: 25.9951 - val_loss: 25.9486 - val_mean_absolute_error: 25.9486
+Epoch 58/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9838 - mean_absolute_error: 25.9838 - val_loss: 25.9445 - val_mean_absolute_error: 25.9445
+Epoch 59/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9960 - mean_absolute_error: 25.9960 - val_loss: 25.9466 - val_mean_absolute_error: 25.9466
+Epoch 60/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9869 - mean_absolute_error: 25.9869 - val_loss: 25.9574 - val_mean_absolute_error: 25.9574
+Epoch 61/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9937 - mean_absolute_error: 25.9937 - val_loss: 25.9527 - val_mean_absolute_error: 25.9527
+Epoch 62/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9957 - mean_absolute_error: 25.9957 - val_loss: 25.9533 - val_mean_absolute_error: 25.9533
+Epoch 63/100
+200/200 [==============================] - 0s 2ms/step - loss: 26.0072 - mean_absolute_error: 26.0072 - val_loss: 25.9453 - val_mean_absolute_error: 25.9453
+Epoch 64/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9890 - mean_absolute_error: 25.9890 - val_loss: 25.9468 - val_mean_absolute_error: 25.9468
+Epoch 65/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9849 - mean_absolute_error: 25.9849 - val_loss: 25.9588 - val_mean_absolute_error: 25.9588
+Epoch 66/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9945 - mean_absolute_error: 25.9945 - val_loss: 25.9466 - val_mean_absolute_error: 25.9466
+Epoch 67/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9881 - mean_absolute_error: 25.9881 - val_loss: 25.9471 - val_mean_absolute_error: 25.9471
+Epoch 68/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9893 - mean_absolute_error: 25.9893 - val_loss: 25.9496 - val_mean_absolute_error: 25.9496
+Epoch 69/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9866 - mean_absolute_error: 25.9866 - val_loss: 25.9511 - val_mean_absolute_error: 25.9511
+Epoch 70/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9883 - mean_absolute_error: 25.9883 - val_loss: 25.9453 - val_mean_absolute_error: 25.9453
+Epoch 71/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9897 - mean_absolute_error: 25.9897 - val_loss: 25.9489 - val_mean_absolute_error: 25.9489
+Epoch 72/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9749 - mean_absolute_error: 25.9749 - val_loss: 25.9749 - val_mean_absolute_error: 25.9749
+Epoch 73/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9874 - mean_absolute_error: 25.9874 - val_loss: 25.9444 - val_mean_absolute_error: 25.9444
+Epoch 74/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9930 - mean_absolute_error: 25.9930 - val_loss: 25.9466 - val_mean_absolute_error: 25.9466
+Epoch 75/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9932 - mean_absolute_error: 25.9932 - val_loss: 25.9468 - val_mean_absolute_error: 25.9468
+Epoch 76/100
+200/200 [==============================] - 0s 2ms/step - loss: 26.0027 - mean_absolute_error: 26.0027 - val_loss: 25.9465 - val_mean_absolute_error: 25.9465
+Epoch 77/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9915 - mean_absolute_error: 25.9915 - val_loss: 25.9452 - val_mean_absolute_error: 25.9452
+Epoch 78/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9898 - mean_absolute_error: 25.9898 - val_loss: 25.9466 - val_mean_absolute_error: 25.9466
+Epoch 79/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9878 - mean_absolute_error: 25.9878 - val_loss: 25.9517 - val_mean_absolute_error: 25.9517
+Epoch 80/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9885 - mean_absolute_error: 25.9885 - val_loss: 25.9464 - val_mean_absolute_error: 25.9464
+Epoch 81/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9940 - mean_absolute_error: 25.9940 - val_loss: 25.9473 - val_mean_absolute_error: 25.9473
+Epoch 82/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9870 - mean_absolute_error: 25.9870 - val_loss: 25.9462 - val_mean_absolute_error: 25.9462
+Epoch 83/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9858 - mean_absolute_error: 25.9858 - val_loss: 25.9468 - val_mean_absolute_error: 25.9468
+Epoch 84/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9856 - mean_absolute_error: 25.9856 - val_loss: 25.9454 - val_mean_absolute_error: 25.9454
+Epoch 85/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9912 - mean_absolute_error: 25.9912 - val_loss: 25.9487 - val_mean_absolute_error: 25.9487
+Epoch 86/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9864 - mean_absolute_error: 25.9864 - val_loss: 25.9460 - val_mean_absolute_error: 25.9460
+Epoch 87/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9857 - mean_absolute_error: 25.9857 - val_loss: 25.9452 - val_mean_absolute_error: 25.9452
+Epoch 88/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9849 - mean_absolute_error: 25.9849 - val_loss: 25.9585 - val_mean_absolute_error: 25.9585
+Epoch 89/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9880 - mean_absolute_error: 25.9880 - val_loss: 25.9508 - val_mean_absolute_error: 25.9508
+Epoch 90/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9923 - mean_absolute_error: 25.9923 - val_loss: 25.9573 - val_mean_absolute_error: 25.9573
+Epoch 91/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9861 - mean_absolute_error: 25.9861 - val_loss: 25.9450 - val_mean_absolute_error: 25.9450
+Epoch 92/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9924 - mean_absolute_error: 25.9924 - val_loss: 25.9445 - val_mean_absolute_error: 25.9445
+Epoch 93/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9879 - mean_absolute_error: 25.9879 - val_loss: 25.9456 - val_mean_absolute_error: 25.9456
+Epoch 94/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9935 - mean_absolute_error: 25.9935 - val_loss: 25.9466 - val_mean_absolute_error: 25.9466
+Epoch 95/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9917 - mean_absolute_error: 25.9917 - val_loss: 25.9463 - val_mean_absolute_error: 25.9463
+Epoch 96/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9896 - mean_absolute_error: 25.9896 - val_loss: 25.9452 - val_mean_absolute_error: 25.9452
+Epoch 97/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9905 - mean_absolute_error: 25.9905 - val_loss: 25.9561 - val_mean_absolute_error: 25.9561
+Epoch 98/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9935 - mean_absolute_error: 25.9935 - val_loss: 25.9479 - val_mean_absolute_error: 25.9479
+Epoch 99/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9836 - mean_absolute_error: 25.9836 - val_loss: 25.9638 - val_mean_absolute_error: 25.9638
+Epoch 100/100
+200/200 [==============================] - 0s 2ms/step - loss: 25.9942 - mean_absolute_error: 25.9942 - val_loss: 25.9463 - val_mean_absolute_error: 25.9463
+63/63 [==============================] - 0s 1ms/step - loss: 26.6283 - mean_absolute_error: 26.6283
+Mean absolute error: 26.6283
