@@ -5,6 +5,13 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
 from keras import layers
 
+import os
+
+# Sets file navigation to the script's folder
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+
+
 def read_csv(file_path):
     return [TestRecord(**row) for _, row in (pd.read_csv(file_path)).iterrows()]
 
