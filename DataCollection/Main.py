@@ -124,4 +124,4 @@ if __name__ == '__main__':
     display_track_info(tracks, audio_features)
 
     # Save the track and audio feature data to a CSV file
-    save_tracks_to_csv(tracks, audio_features, genre_input + "_track_data.csv")
+    save_tracks_to_csv(tracks, audio_features, genre_input + "_" + results_input + ".csv")
