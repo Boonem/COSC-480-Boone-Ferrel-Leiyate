@@ -23,6 +23,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","Loudness", "Speechiness", "Acousticness",
     "Instrumentalness", "Liveness", "Valence", "Tempo"]
 
+input_file = input("Enter the filename you to use: ")
+
 # Takes in csv, filters to only columns we want to use, returns TestRecord list
 def read_csv(file_path):
     return [TestRecord(**row) for _, row in (pd.read_csv(file_path, usecols=filterColumns)).iterrows()]
@@ -57,7 +59,7 @@ def build_model(input_shape):
     model.compile(optimizer='adam', loss='mean_absolute_error', metrics=['mean_absolute_error'])
     return model
 
-X_train, X_test, y_train, y_test = prepare_data(read_csv('input.csv'))
+X_train, X_test, y_train, y_test = prepare_data(read_csv(input_file))
 
 model = build_model((X_train.shape[1],))
 model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)

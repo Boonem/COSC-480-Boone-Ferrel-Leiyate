@@ -56,12 +56,14 @@ def display_track_info(tracks, audio_features):
     # Displays the track name, popularity, and audio features for each track.
     for idx, track in enumerate(tracks):
         track_name = track['name']
+        track_duration = track["duration_ms"],
         track_popularity = track['popularity']
         features = audio_features[idx]
 
         if features:
             print(f"Track {idx+1}:")
             print(f"  Name: {track_name}")
+            print(f"  Duration (ms): {track_duration}")
             print(f"  Popularity: {track_popularity}")
             print(f"  Danceability: {features['danceability']}")
             print(f"  Energy: {features['energy']}")
@@ -81,21 +83,22 @@ def save_tracks_to_csv(tracks, audio_features, filename='spotify_tracks.csv'):
         features = audio_features[idx]
         if features:
             track_data.append({
-                'track_name': track['name'],
-                'popularity': track['popularity'],
-                'danceability': features['danceability'],
-                'energy': features['energy'],
-                'loudness': features['loudness'],
-                'tempo': features['tempo'],
-                'acousticness': features['acousticness'],
-                'speechiness': features['speechiness'],
-                'instrumentalness': features['instrumentalness'],
-                'liveness': features['liveness'],
-                'valence': features['valence']
+                'Track_Name': track['name'],
+                'Track Duration (ms)': track["duration_ms"],
+                'Popularity': track['popularity'],
+                'Danceability': features['danceability'],
+                'Energy': features['energy'],
+                'Loudness': features['loudness'],
+                'Tempo': features['tempo'],
+                'Acousticness': features['acousticness'],
+                'Speechiness': features['speechiness'],
+                'Instrumentalness': features['instrumentalness'],
+                'Liveness': features['liveness'],
+                'Valence': features['valence']
             })
 
-    headers = ['track_name', 'popularity', 'danceability', 'energy', 'loudness', 'tempo', 'acousticness', 
-               'speechiness', 'instrumentalness', 'liveness', 'valence']
+    headers = ['Track_Name', 'Track Duration (ms)', 'Popularity', 'Danceability', 'Energy', 'Loudness', 'Tempo', 'Acousticness', 
+               'Speechiness', 'Instrumentalness', 'Liveness', 'Valence']
     
     # Use DataStorage to save the data
     storage = DataStorage(filename)
@@ -121,4 +124,4 @@ if __name__ == '__main__':
     display_track_info(tracks, audio_features)
 
     # Save the track and audio feature data to a CSV file
-    save_tracks_to_csv(tracks, audio_features)
+    save_tracks_to_csv(tracks, audio_features, genre_input + "_track_data.csv")
