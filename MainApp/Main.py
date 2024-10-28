@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
 from keras import layers
@@ -64,5 +65,13 @@ X_train, X_test, y_train, y_test = prepare_data(read_csv(input_file))
 model = build_model((X_train.shape[1],))
 model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)
 
+y_pred = model.predict(X_test).flatten()
 test_loss, test_mae = model.evaluate(X_test, y_test)
+test_mse = mean_squared_error(y_test, y_pred)
+test_rmse = np.sqrt(test_mse)
+test_r2 = r2_score(y_test, y_pred)
+
 print(f'Mean absolute error: {test_mae:.4f}')
+print(f'Mean squared error: {test_mse:.4f}')
+print(f'Root mean squared error: {test_rmse:.4f}')
+print(f'R-squared: {test_r2:.4f}')
