@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 import time
 
+import numpy as np
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -15,9 +16,17 @@ load_dotenv()
 cid = os.getenv('client_id')
 secret = os.getenv('client_secret')
 
+if cid is None or secret is None:
+    raise ValueError("Client ID and Client Secret not found. Please make sure they are set in the .env file.")
+
 # Apply API Ids for Spotipy
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
+# Prompt user to enter genre and mode
+genre = input("Enter the genre you want to collect data for: ")
+mode = input("Enter 'all' to process all files in the directory or 'single' for a specific file: ")
+input_file = f"../DataCollection/{genre}_{mode}_tracks.csv"
 
 def get_tracks_by_genre(genre, limit=500):
     # Ensure limit is an integer
@@ -52,6 +61,25 @@ def get_audio_features(track_ids):
     
     return audio_features
 
+# Collect track data for the specified genre
+tracks = get_tracks_by_genre(genre)
+
+# Extract track IDs for fetching audio features
+track_ids = [track['id'] for track in tracks]
+
+# Fetch audio features for all tracks
+audio_features = get_audio_features(track_ids)
+
+# Display the track name, popularity, and audio features
+# display_track_info(tracks, audio_features)  # Commented out for now
+
+# Save track and audio feature data to CSV
+filename = f"{genre}_{mode}_tracks.csv"  # Create filename based on genre and mode
+storage = DataStorage(filename)
+headers = ['Track_Name', 'Track Duration (ms)', 'Popularity', 'Danceability', 'Energy', 'Loudness', 'Tempo', 'Acousticness', 
+           'Speechiness', 'Instrumentalness', 'Liveness', 'Valence']
+
+
 def display_track_info(tracks, audio_features):
     # Displays the track name, popularity, and audio features for each track.
     for idx, track in enumerate(tracks):
@@ -76,10 +104,13 @@ def display_track_info(tracks, audio_features):
             print(f"  Valence: {features['valence']}")
             print()
 
-def save_tracks_to_csv(tracks, audio_features, filename='spotify_tracks.csv'):
-    # Combine track and audio feature data for saving to CSV
-    track_data = []
-    for idx, track in enumerate(tracks):
+filename = f"{genre}_{mode}_tracks.csv"  # Create filename based on genre and mode
+storage = DataStorage(filename)
+headers = ['Track_Name', 'Track Duration (ms)', 'Popularity', 'Danceability', 'Energy', 'Loudness', 'Tempo', 'Acousticness', 
+           'Speechiness', 'Instrumentalness', 'Liveness', 'Valence']
+
+track_data = []
+for idx, track in enumerate(tracks):
         features = audio_features[idx]
         if features:
             track_data.append({
@@ -97,31 +128,30 @@ def save_tracks_to_csv(tracks, audio_features, filename='spotify_tracks.csv'):
                 'Valence': features['valence']
             })
 
-    headers = ['Track_Name', 'Track Duration (ms)', 'Popularity', 'Danceability', 'Energy', 'Loudness', 'Tempo', 'Acousticness', 
-               'Speechiness', 'Instrumentalness', 'Liveness', 'Valence']
+headers = ['Track_Name', 'Track Duration (ms)', 'Popularity', 'Danceability', 'Energy', 'Loudness', 'Tempo', 'Acousticness', 
+                     'Speechiness', 'Instrumentalness', 'Liveness', 'Valence']
     
-    # Use DataStorage to save the data
-    storage = DataStorage(filename)
-    storage.save_to_csv(track_data, headers)
-    print(f"Track data has been saved to {filename}.")
+# Save data using DataStorage class
+storage.save_to_csv(track_data, headers)
+print(f"Data collection complete. Saved to {filename}")
 
 # Main Execution
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # Example of genre input (replace with the genre you want)
-    genre_input = input("Enter the genre you want to search for: ")
-    results_input = input("Enter the number of desired results: ")
+#    genre_input = input("Enter the genre you want to search for: ")
+#    results_input = input("Enter the number of desired results: ")
 
-    # Fetch tracks for the specified genre
-    tracks = get_tracks_by_genre(genre_input, results_input)
+#    # Fetch tracks for the specified genre
+#    tracks = get_tracks_by_genre(genre_input, results_input)
 
     # Extract track IDs for fetching audio features
-    track_ids = [track['id'] for track in tracks]
+#    track_ids = [track['id'] for track in tracks]
 
     # Fetch audio features for all tracks
-    audio_features = get_audio_features(track_ids)
+#    audio_features = get_audio_features(track_ids)
 
     # Display the track name, popularity, and audio features
-    display_track_info(tracks, audio_features)
+#    display_track_info(tracks, audio_features)
 
     # Save the track and audio feature data to a CSV file
-    save_tracks_to_csv(tracks, audio_features, genre_input + "_" + results_input + ".csv")
+#    save_tracks_to_csv(tracks, audio_features, genre_input + "_" + results_input + ".csv")
