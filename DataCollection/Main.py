@@ -28,7 +28,7 @@ genre = input("Enter the genre you want to collect data for: ")
 mode = input("Enter 'all' to process all files in the directory or 'single' for a specific file: ")
 input_file = f"../DataCollection/{genre}_{mode}_tracks.csv"
 
-def get_tracks_by_genre(genre, limit=500):
+def get_tracks_by_genre(genre, mode, limit=500):
     # Ensure limit is an integer
     limit = int(limit)  # Convert the limit to an integer
 
@@ -36,18 +36,24 @@ def get_tracks_by_genre(genre, limit=500):
     search_limit = 50  # Maximum number of tracks returned by the Spotify API in a single request
     offset = 0
 
-    while len(track_data) < limit:
-        results = sp.search(q=f'genre:{genre}', type='track', limit=search_limit, offset=offset)
-        tracks = results['tracks']['items']
-        
-        if not tracks:  
-            break
+    if mode == "single":
+        # Fetch only one track if "single" mode is selected
+        results = sp.search(q=f'genre:{genre}', type='track', limit=1, offset=0)
+        track_data.extend(results['tracks']['items'])
+    else:
+        # Fetch up to the limit if "all" mode is selected
+        while len(track_data) < limit:
+            results = sp.search(q=f'genre:{genre}', type='track', limit=search_limit, offset=offset)
+            tracks = results['tracks']['items']
+            
+            if not tracks:  
+                break
 
-        track_data.extend(tracks)
-        offset += search_limit
-        time.sleep(1)  # To avoid hitting rate limits
+            track_data.extend(tracks)
+            offset += search_limit
+            time.sleep(1)  # To avoid hitting rate limits
 
-    return track_data[:limit]
+    return track_data[:limit] if mode == "all" else track_data
 
 def get_audio_features(track_ids):
     # Fetches the audio features for a list of track IDs.
@@ -62,7 +68,7 @@ def get_audio_features(track_ids):
     return audio_features
 
 # Collect track data for the specified genre
-tracks = get_tracks_by_genre(genre)
+tracks = get_tracks_by_genre(genre, mode)
 
 # Extract track IDs for fetching audio features
 track_ids = [track['id'] for track in tracks]
