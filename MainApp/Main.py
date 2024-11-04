@@ -70,7 +70,7 @@ filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","
     "Instrumentalness", "Liveness", "Valence", "Tempo"]
 
 
-operation_mode = input("Choose an option: 1. Collect new data by genre & Run\n2. Run model on existing file\n3. Run model on all files in directory(not yet implemented)")
+operation_mode = input("Choose an option: \n1. Collect new data by genre & Run\n2. Run model on existing file (not yet implemented)\n3. Run model on all files in directory(not yet implemented)")
 genre=""
 input_file=""
 dataCollect=""
@@ -121,11 +121,15 @@ def prepare_data(records):
     return X_train, X_test, y_train, y_test
 
 def build_model(input_shape):
+    layers1 = layers.Dense(64, activation='relu', input_shape=input_shape)
+    layers2 = layers.Dense(32, activation='relu')
+    layers3 = layers.Dense(16, activation='relu')
+    layers4 = layers.Dense(1)
     model = keras.Sequential([
-        layers.Dense(64, activation='relu', input_shape=input_shape),
-        layers.Dense(32, activation='relu'),
-        layers.Dense(16, activation='relu'),
-        layers.Dense(1)
+        layers1,
+        layers2,
+        layers3,
+        layers4
     ])
     model.compile(optimizer='adam', loss='mean_absolute_error', metrics=['mean_absolute_error'])
     return model
@@ -140,8 +144,13 @@ test_loss, test_mae = model.evaluate(X_test, y_test)
 test_mse = mean_squared_error(y_test, y_pred)
 test_rmse = np.sqrt(test_mse)
 test_r2 = r2_score(y_test, y_pred)
-
+print(f'Genre: {genre}')
 print(f'Mean absolute error: {test_mae:.4f}')
 print(f'Mean squared error: {test_mse:.4f}')
 print(f'Root mean squared error: {test_rmse:.4f}')
 print(f'R-squared: {test_r2:.4f}')
+print(f'----Weights----')
+#print(f'weights1 {model.get_layer("dense").weights}')
+#print(f'weights2 {model.get_layer("dense_1").weights}')
+#print(f'weights3 {model.get_layer("dense_2").weights}')
+print(f'weights4 {model.get_layer("dense_3").weights}')

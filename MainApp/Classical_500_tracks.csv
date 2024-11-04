@@ -1,0 +1,501 @@
+Track_Name,Track Duration (ms),Popularity,Danceability,Energy,Loudness,Tempo,Acousticness,Speechiness,Instrumentalness,Liveness,Valence
+Experience,315426,75,0.447,0.449,-10.634,92.468,0.934,0.0376,0.961,0.0697,0.036
+"Cello Suite No. 1 in G Major, BWV 1007: I. Prélude",151733,62,0.218,0.111,-21.375,77.423,0.895,0.0688,0.834,0.165,0.27
+Adieux,175492,69,0.225,0.00407,-37.107,73.595,0.987,0.0464,0.936,0.112,0.32
+Gymnopédie No. 1,205866,67,0.468,0.0127,-36.856,72.776,0.994,0.123,0.937,0.094,0.356
+Carnival of the Animals: The Swan,150146,66,0.213,0.0656,-24.81,65.023,0.992,0.0467,0.969,0.0699,0.0384
+"Sonata No. 14 ""Moonlight"" in C-Sharp Minor"", Op. 27 No. 2: I. Adagio sostenuto",315426,68,0.184,0.00527,-37.264,170.612,0.995,0.0432,0.887,0.173,0.151
+River Flows In You,188786,69,0.315,0.22,-21.343,145.195,0.987,0.0514,0.943,0.0802,0.116
+"Suite bergamasque, L. 75: III. Clair de lune",294960,64,0.32,0.00501,-33.366,68.947,0.993,0.0455,0.919,0.0618,0.0383
+"Tchaikovsky: Swan Lake, Op. 20, Act 2: No. 10, Scene. Moderato",166866,68,0.136,0.164,-18.756,58.303,0.911,0.0364,0.916,0.109,0.071
+Merry-Go-Round of Life - from 'Howl's Moving Castle',311106,66,0.239,0.287,-12.565,71.608,0.876,0.0388,0.644,0.122,0.185
+The Flower Garden,178506,64,0.0999,0.181,-17.599,71.277,0.94,0.0424,0.888,0.105,0.0922
+"Clair de Lune, L. 32",268000,65,0.335,0.00532,-31.646,65.832,0.994,0.0376,0.912,0.0621,0.0397
+In A Sentimental Mood,255226,64,0.464,0.305,-12.435,107.854,0.936,0.0316,0.0848,0.208,0.281
+"The Carnival of the Animals, R. 125: XIII. The Swan (Arr. for Cello and Piano)",174266,64,0.169,0.0161,-31.034,128.143,0.986,0.0442,0.86,0.0805,0.0573
+"Vivaldi Variation (Arr. for Piano from Concerto for Strings in G Minor, RV 156 by F. Christl)",112352,66,0.429,0.258,-16.967,78.809,0.957,0.0549,0.893,0.115,0.0972
+Epilogue,108968,64,0.252,0.0875,-24.711,135.774,0.989,0.0403,0.873,0.108,0.126
+Satie / Orch. Ducros: Gymnopédie No. 1,172120,62,0.0921,0.0183,-31.858,166.979,0.942,0.0513,0.94,0.195,0.039
+Carnival of the Animals: The Swan - Arranged for Cello and Harp by Miriam Keogh,174333,62,0.216,0.149,-18.173,123.201,0.986,0.0402,0.94,0.0921,0.117
+"Album for the Young, Op. 39: No. 3. Mamma (Maman)",93506,65,0.418,0.00869,-37.257,87.273,0.996,0.0455,0.962,0.105,0.42
+"Chopin: Nocturne No. 20 in C-Sharp Minor, Op. Posth.",259493,65,0.225,0.0047,-30.928,163.665,0.992,0.0509,0.881,0.0722,0.186
+"Dolly Suite, Op. 56: I. Berceuse",176518,62,0.454,0.0076,-33.663,64.645,0.995,0.0408,0.91,0.0864,0.294
+Wind Song,198649,66,0.339,0.00572,-32.309,72.7,0.986,0.0378,0.923,0.103,0.0616
+Nuvole Bianche,357706,70,0.191,0.0582,-25.398,132.614,0.961,0.0578,0.89,0.0941,0.0454
+Once,125984,63,0.338,0.00887,-32.602,113.173,0.994,0.0459,0.957,0.109,0.114
+"16 Waltzes, Op. 39 (1867 version): No. 3 in G-Sharp Minor",52200,64,0.287,0.00703,-41.696,124.244,0.995,0.0518,0.909,0.0997,0.693
+The Arts and the Hours,285442,60,0.417,0.026,-36.7,135.244,0.995,0.0493,0.938,0.107,0.269
+You're in Love,71800,61,0.526,0.0344,-27.855,67.101,0.996,0.11,0.924,0.118,0.208
+Concerning Hobbits,175040,63,0.488,0.0629,-21.524,104.311,0.843,0.0342,0.406,0.133,0.175
+"Grieg: Peer Gynt, Op. 23: Morning Mood (Transcr. Katsaris for Piano)",248600,30,0.282,0.0264,-26.705,144.542,0.982,0.0384,0.871,0.088,0.0672
+"Bach, JS: Orchestral Suite No. 2 in B Minor, BWV 1067: VII. Badinerie (Version for Violin and Orchestra)",75386,30,0.488,0.181,-17.76,145.98,0.827,0.0555,0.0474,0.264,0.888
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 4, Bereite dich, Zion, mit zärtlichen Trieben",316720,24,0.399,0.0439,-24.491,99.718,0.979,0.0463,1.69e-06,0.284,0.418
+Joy,143973,26,0.295,0.207,-18.213,98.39,0.992,0.0358,0.931,0.164,0.112
+"Bach: Flute Sonata in E-Flat Major, BWV 1031: II. Siciliano (Arr. Duchâble for Piano)",127093,27,0.491,0.0282,-35.207,104.072,0.996,0.0469,0.923,0.117,0.429
+"Bach, JS: The Well-Tempered Clavier, Book 1, Prelude and Fugue No. 1 in C Major, BWV 846: I. Prelude",135560,26,0.279,0.0876,-27.941,134.041,0.989,0.0383,0.896,0.132,0.0973
+"Schubert: 4 Impromptus, Op. 90, D. 899: No. 3 in G-Flat Major",385653,23,0.175,0.0418,-25.426,66.084,0.992,0.0402,0.907,0.0748,0.0686
+"Bach, JS: Violin Concerto No. 2 in E Major, BWV 1042: II. Adagio",379120,20,0.199,0.049,-21.91,111.693,0.93,0.049,0.0393,0.0836,0.0758
+"Fauré: 3 Romances sans paroles, Op. 17: No. 3 in A-Flat Major",156520,24,0.28,0.00856,-30.663,69.877,0.995,0.0406,0.903,0.107,0.209
+"Massenet: 10 Pièces de genre, Op. 10: No. 5, Mélodie ""Élégie""",156560,23,0.335,0.0121,-27.15,68.764,0.995,0.0455,0.883,0.0858,0.168
+Noah,167880,23,0.36,0.0457,-20.132,65.971,0.981,0.0327,0.933,0.105,0.124
+"Satie: 3 Gymnopédies: No. 1, Lent et douloureux",189026,22,0.585,0.025,-27.829,80.555,0.991,0.084,0.878,0.101,0.597
+"Bach, JS: Piano Concerto No. 5 in F Minor, BWV 1056: II. Largo",187800,22,0.327,0.0055,-33.208,107.052,0.986,0.0426,0.0403,0.133,0.0891
+"Christ lag in Todesbanden BWV 4: III. Versus II, Den Tod niemand zwingen kunnt",311866,19,0.122,0.029,-26.627,81.547,0.971,0.0419,0.069,0.123,0.0364
+"Gluck: La plainte d’Orphée (Arr. Kempff for Piano After Dance of the Blessed Spirits from Orfeo, Wq. 30)",194386,22,0.398,0.0294,-27.708,76.355,0.995,0.0388,0.913,0.0475,0.0629
+Dessner: Song for Octave,197250,21,0.403,0.104,-23.741,134.918,0.992,0.0348,0.961,0.134,0.167
+Playful (variation),197506,21,0.243,0.00395,-34.378,67.057,0.973,0.0341,0.875,0.0775,0.193
+"Debussy: 2 Arabesques, CD 74, L. 66: No. 1, Andantino con moto",230400,20,0.296,0.0773,-25.922,77.443,0.994,0.0405,0.904,0.0818,0.0914
+Sweet Dream,197573,21,0.287,0.0937,-20.273,85.935,0.986,0.0277,0.866,0.0885,0.167
+"Satie: 6 Gnossiennes: No. 1, Lent",205066,21,0.386,0.00246,-28.015,72.317,0.995,0.0883,0.85,0.101,0.0441
+"Bach, JS: Herz und Mund und Tat und Leben, BWV 147: X. Jesu Joy of Man's Desiring (Arr. Hess for Piano)",227120,20,0.163,0.0114,-35.363,61.763,0.995,0.0449,0.875,0.116,0.281
+"Chopin: Waltz No. 7 in C-Sharp Minor, Op. 64 No. 2",236533,20,0.291,0.0341,-27.103,69.814,0.992,0.0367,0.893,0.117,0.163
+"Debussy: Rêverie, CD 76, L. 68",233080,19,0.234,0.0216,-30.124,73.639,0.995,0.0436,0.898,0.0702,0.0492
+"Mozart: Piano Sonata No. 12 in F Major, K. 332: II. Adagio",236653,20,0.302,0.0372,-28.311,177.82,0.995,0.0434,0.886,0.075,0.134
+"Chopin: Nocturne No. 20 in C-Sharp Minor, Op. Posth.",243760,19,0.242,0.00564,-34.32,72.699,0.989,0.0447,0.873,0.0744,0.0931
+Ukiyo,235106,19,0.463,0.056,-23.791,159.915,0.99,0.0442,0.907,0.0695,0.115
+"Chopin: Nocturne No. 2 in E-Flat Major, Op. 9 No. 2",272880,18,0.358,0.0144,-30.311,59.068,0.992,0.0362,0.88,0.069,0.0649
+"Liszt: 3 Liebesträume, S. 541: No. 3 in A-Flat Major",247160,19,0.209,0.0358,-24.723,67.714,0.991,0.0451,0.916,0.0806,0.0312
+The place where they go (Munich Session),260000,17,0.189,0.0627,-24.534,62.016,0.991,0.0366,0.933,0.0943,0.0394
+Youami,249226,18,0.501,0.0154,-24.874,65.82,0.989,0.0609,0.949,0.132,0.0394
+"Debussy: Suite bergamasque, CD 82, L. 75: III. Clair de lune",283053,18,0.322,0.00597,-32.227,69.919,0.995,0.0459,0.928,0.0686,0.0393
+"Bach, JS: Keyboard Concerto No. 3 in D Minor, BWV 974: II. Adagio (After Marcello's Oboe Concerto, S. Z799)",263306,18,0.358,0.00343,-38.916,58.045,0.992,0.0475,0.854,0.0716,0.0482
+Peace of Mind,262506,17,0.48,0.0274,-24.966,160.56,0.971,0.0495,0.943,0.101,0.215
+"Tchaikovsky: The Seasons, Op. 37a: No. 6, June. Barcarolle",280600,17,0.217,0.0098,-31.274,64.796,0.995,0.0468,0.899,0.0645,0.107
+"Bach, JS: Concerto for Violin and Oboe in C Minor, BWV 1060: I. Allegro",250200,21,0.524,0.25,-15.415,109.991,0.941,0.0411,0.928,0.266,0.645
+"Mozart: Piano Concerto No. 21 in C Major, K. 467: II. Andante",394160,15,0.261,0.0312,-28.733,64.976,0.978,0.0332,0.902,0.0886,0.115
+"Rachmaninov: Piano Concerto No. 2 in C Minor, Op. 18: II. Adagio sostenuto",716506,16,0.148,0.0294,-28.633,90.814,0.979,0.0395,0.927,0.1,0.0371
+"Chopin: Nocturne No. 8 in D-Flat Major, Op. 27 No. 2",300493,16,0.234,0.0207,-28.977,80.304,0.991,0.0375,0.918,0.133,0.0365
+"Bach, JS: Violin Concerto No. 2 in E Major, BWV 1042: III. Allegro assai",143533,19,0.54,0.209,-16.648,110.494,0.915,0.0449,0.0361,0.281,0.836
+"Grieg: Lyric Pieces, Book 6, Op. 57: No. 6, Homesickness",298200,16,0.433,0.00393,-35.967,138.629,0.992,0.0622,0.948,0.0594,0.136
+"Ravel: Jeux d'eaux, M. 30",336573,16,0.333,0.201,-21.426,115.721,0.986,0.0375,0.912,0.173,0.0366
+Balakirev: Berceuse in D-Flat Major,311208,16,0.253,0.107,-22.68,66.943,0.993,0.0461,0.888,0.123,0.0379
+"Ravel: Piano Concerto in G Major, M. 83: II. Adagio assai",520000,14,0.225,0.0944,-24.985,77.723,0.979,0.0348,0.931,0.0891,0.04
+"Mozart: Concerto for Two Pianos No. 10 in E-Flat Major, K. 365: II. Andante",485333,14,0.261,0.0555,-25.707,79.39,0.991,0.0375,0.88,0.173,0.148
+"Ravel: Pavane pour une infante défunte, M. 19",427706,15,0.556,0.0126,-24.994,99.151,0.995,0.0965,0.933,0.0978,0.0866
+"Ravel: Gaspard de la nuit, M. 55: I. Ondine",387693,15,0.136,0.0681,-27.094,56.088,0.991,0.0399,0.922,0.0703,0.0336
+"Bach, JS: Cello Suite No. 1 in G Major, BWV 1007: I. Prelude (Version for Viola)",147186,22,0.353,0.0615,-25.159,89.71,0.995,0.0612,0.51,0.122,0.726
+"Bach, JS: Flute Sonata in E-Flat Major, BWV 1031: II. Siciliano (Version for Violin and Harpsichord)",140226,19,0.256,0.0319,-25.961,129.158,0.976,0.0463,2.08e-05,0.0719,0.191
+"The Art of Fugue, BWV 1080: Contrapunctus VI à 4 in stylo francese",246693,9,0.302,0.355,-9.742,80.371,0.915,0.0312,0.683,0.117,0.222
+"Suite No. 1 in G Major, BWV 1007: I. Prélude",140474,15,0.391,0.141,-22.924,89.719,0.985,0.0545,0.912,0.145,0.668
+"Bach, JS: Matthäus-Passion, BWV 244, Pt. 2: Aria. ""Erbarme dich""",424000,19,0.246,0.114,-17.737,98.742,0.98,0.0453,0.0639,0.0796,0.0986
+"Bach, JS: Violin Concerto No. 2 in E Major, BWV 1042: I. Allegro",400320,17,0.528,0.202,-17.957,111.552,0.909,0.0458,0.0849,0.105,0.636
+"Suite No. 1 in G Major, BWV 1007: II. Allemande",252515,13,0.317,0.0951,-22.348,83.291,0.982,0.0518,0.542,0.222,0.71
+"Suite No. 1 in G Major, BWV 1007: V. Menuet I and II",171834,12,0.444,0.0908,-22.296,140.285,0.98,0.0648,0.839,0.128,0.626
+"Suite No. 2 in D Minor, BWV 1008: V. Menuet I and II",179906,10,0.502,0.0683,-20.249,107.535,0.983,0.0676,0.76,0.109,0.341
+"Suite No. 2 in D Minor, BWV 1008: II. Allemande",199978,12,0.329,0.0797,-22.143,82.243,0.985,0.0538,0.904,0.121,0.574
+"Bach, JS: Violin Concerto in D Minor, BWV 1052R: II. Adagio",400933,14,0.12,0.0424,-22.957,83.245,0.923,0.048,0.0271,0.081,0.039
+"Suite No. 2 in D Minor, BWV 1008: III. Courante",105234,11,0.429,0.236,-19.074,135.546,0.987,0.0402,0.866,0.295,0.902
+"Bach, JS: Violin Concerto in D Minor, BWV 1052R: I. Allegro",401440,16,0.462,0.207,-18.438,120.276,0.919,0.0517,0.142,0.0949,0.6
+"Suite No. 1 in G Major, BWV 1007: III. Courante",132759,13,0.511,0.158,-21.263,125.057,0.985,0.0648,0.894,0.159,0.858
+"Suite No. 2 in D Minor, BWV 1008: I. Prélude",214434,12,0.36,0.0691,-23.795,132.761,0.984,0.0599,0.885,0.11,0.351
+"Bach, JS: Violin Concerto in D Minor, BWV 1052R: III. Allegro",432386,14,0.45,0.282,-16.884,139.313,0.935,0.0416,0.491,0.221,0.495
+"Suite No. 2 in D Minor, BWV 1008: IV. Sarabande",253809,11,0.276,0.0218,-26.215,100.388,0.961,0.0433,0.6,0.109,0.0971
+"Suite No. 1 in G Major, BWV 1007: VI. Gigue",87318,12,0.52,0.0873,-20.015,76.241,0.976,0.0704,0.895,0.108,0.863
+"Bach, JS: Concerto for Violin and Oboe in C Minor, BWV 1060: II. Adagio",301706,18,0.184,0.0907,-20.078,93.096,0.888,0.0518,0.303,0.14,0.158
+"Suite No. 1 in G Major, BWV 1007: IV. Sarabande",162496,13,0.269,0.031,-26.854,110.961,0.949,0.0485,0.765,0.114,0.234
+"Suite No. 3 in C Major, BWV 1009: I. Prélude",179100,10,0.409,0.194,-22.745,112.847,0.974,0.055,0.846,0.152,0.586
+"Suite No. 4 in E-Flat Major, BWV 1011: II. Allemande",240206,9,0.409,0.0341,-25.074,119.116,0.978,0.0478,0.479,0.126,0.648
+"Suite No. 4 in E-Flat Major, BWV 1011: III. Courante",189656,8,0.515,0.136,-24.488,148.097,0.982,0.0696,0.796,0.11,0.698
+"Suite No. 5 in C Minor, BWV 1011: II. Allemande",271743,7,0.357,0.022,-26.031,89.642,0.968,0.0471,0.364,0.128,0.424
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 1, Jauchzet, frohlocket, auf, preiset die Tage",470866,11,0.469,0.314,-16.121,133.608,0.955,0.0326,0.0169,0.0663,0.548
+"Suite No. 3 in C Major, BWV 1009: IV. Sarabande",215156,9,0.2,0.0124,-27.586,76.546,0.966,0.0577,0.639,0.122,0.141
+VI Suite in D Major: III. Corrente,180070,7,0.466,0.279,-15.579,149.148,0.903,0.0444,0.381,0.175,0.897
+"Suite No. 3 in C Major, BWV 1009: IV. Sarabande",215156,9,0.2,0.0124,-27.586,76.546,0.966,0.0577,0.639,0.122,0.141
+"Suite No. 2 in D Minor, BWV 1008: VI. Gigue",142443,10,0.503,0.149,-20.132,112.24,0.982,0.0526,0.891,0.102,0.782
+"Suite No. 3 in C Major, BWV 1009: VI. Gigue",174037,9,0.491,0.105,-20.01,123.81,0.987,0.05,0.903,0.179,0.608
+"Suite No. 3 in C Major, BWV 1009: II. Allemande",207824,10,0.557,0.0829,-22.737,123.698,0.982,0.0586,0.844,0.152,0.664
+"Suite No. 4 in E-Flat Major, BWV 1011: I. Prélude",193200,9,0.512,0.0767,-26.868,143.588,0.986,0.0727,0.877,0.112,0.784
+VI Suite in D Major: IV. Sarabanda,268638,9,0.113,0.125,-17.801,51.492,0.887,0.0511,0.242,0.145,0.0902
+"Suite No. 3 in C Major, BWV 1009: III. Courante",144093,10,0.405,0.233,-22.663,97.766,0.982,0.0408,0.731,0.181,0.953
+"Suite No. 3 in C Major, BWV 1009: V. Bourrée I and II",178200,9,0.438,0.068,-23.917,95.624,0.985,0.0469,0.769,0.119,0.816
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 1, Jauchzet, frohlocket, auf, preiset die Tage",470866,11,0.469,0.314,-16.121,133.608,0.955,0.0326,0.0169,0.0663,0.548
+"Suite No. 4 in E-Flat Major, BWV 1011: IV. Sarabande",223631,8,0.263,0.00627,-27.004,73.375,0.974,0.0578,0.0105,0.114,0.181
+Gigue from Suite No. 1 for Cello and Piano,90994,8,0.61,0.0815,-20.149,96.503,0.979,0.0485,0.75,0.102,0.629
+"Suite No. 4 in E-Flat Major, BWV 1011: V. Bourrée I and II",249037,8,0.472,0.0596,-23.718,83.037,0.983,0.0604,0.838,0.116,0.762
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 8, Großer Herr, o starker König",253093,7,0.533,0.232,-21.467,99.123,0.966,0.0415,5.62e-05,0.0612,0.688
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 21, Ehre sei Gott in der Höhe",140626,6,0.451,0.407,-18.147,118.925,0.99,0.0387,0.000448,0.419,0.789
+VI Suite in D Major: V. Gavotte I e II,191091,4,0.534,0.179,-15.616,116.955,0.901,0.0629,0.00136,0.242,0.551
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 39, Flößt, mein Heiland, flößt dein Namen",394853,4,0.23,0.0261,-30.064,168.839,0.933,0.0621,0.000105,0.0971,0.134
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 13, Und der Engel sprach zu ihnen",43480,6,0.444,0.0264,-22.943,81.086,0.931,0.0409,0.0,0.169,0.249
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 42, Jesus richte mein Beginnen",112893,3,0.354,0.114,-23.732,96.867,0.979,0.0321,0.19,0.293,0.425
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 17, Schaut hin, dort liegt im finstern Stall",48040,6,0.201,0.0646,-30.941,59.152,0.989,0.0407,0.679,0.166,0.231
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 35, Seid froh dieweil",49680,4,0.161,0.138,-19.933,172.135,0.988,0.0372,0.0,0.53,0.423
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 57, Nur ein Wink von seinen Händen",235426,3,0.354,0.0387,-24.604,75.975,0.949,0.0374,0.00111,0.118,0.522
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 38, Immanuel, o süßes Wort",139706,4,0.359,0.0736,-24.177,109.372,0.967,0.0499,0.0,0.174,0.315
+"Suite No. 6 in D Major, BWV 1012: II. Allemande",431606,7,0.204,0.0144,-28.812,168.465,0.984,0.0518,1.64e-05,0.0984,0.271
+"Suite No. 5 in C Minor, BWV 1011: III. Courante",129993,7,0.451,0.0406,-24.416,116.925,0.967,0.0512,0.443,0.109,0.619
+"Suite No. 6 in D Major, BWV 1012: III. Courante",192993,6,0.456,0.0737,-25.125,149.18,0.987,0.0958,0.235,0.104,0.846
+"Clavier-Übung III: Praeludium pro Organo pleno, BWV 552",571892,6,0.126,0.173,-15.565,97.108,0.802,0.0338,0.952,0.142,0.203
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 10, Sinfonia",339146,7,0.117,0.0196,-30.211,93.824,0.935,0.0403,0.0855,0.128,0.0567
+VI Suite in D Major: VI. Giga,210433,4,0.591,0.257,-12.221,80.569,0.864,0.039,0.000745,0.119,0.612
+"Suite No. 5 in C Minor, BWV 1011: V. Gavotte I and II",266287,6,0.342,0.0433,-24.946,82.705,0.979,0.0567,0.708,0.105,0.638
+"Suite No. 6 in D Major, BWV 1012: VI. Gigue",220424,6,0.483,0.0717,-22.187,123.494,0.983,0.0598,0.00523,0.107,0.72
+VI Suite in D Major: II. Allemanda,505513,6,0.164,0.091,-19.237,76.353,0.865,0.0475,0.000943,0.286,0.138
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 49, Warum wollt ihr erschrecken?",34666,3,0.339,0.0467,-23.564,170.433,0.955,0.0393,0.0,0.512,0.279
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 30, Und sie kamen eilend",71333,4,0.355,0.0182,-26.184,86.522,0.948,0.0788,0.0,0.128,0.185
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 29, Herr, dein Mitleid, dein Erbarmen",425693,5,0.394,0.0699,-24.979,123.145,0.976,0.0501,0.000165,0.104,0.348
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 15, Frohe Hirten, eilt, ach eilet",195960,6,0.407,0.0332,-28.564,125.019,0.964,0.0604,6.01e-06,0.127,0.355
+Gigue from Suite No. 3 for Cello and Piano,170455,5,0.625,0.14,-17.529,120.961,0.975,0.0598,0.831,0.135,0.639
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 50, Und ließ versammeln alle Hohenpriester",84173,3,0.35,0.0204,-26.306,102.758,0.952,0.0447,0.0,0.145,0.264
+"The Art of Fugue, BWV 1080: Contrapunctus I",176888,4,0.282,0.152,-14.313,60.237,0.955,0.0346,0.911,0.175,0.116
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 19, Schlafe, mein Liebster, genieße der Ruh",597813,6,0.239,0.025,-29.07,108.67,0.97,0.0445,0.011,0.116,0.113
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 27, Er hat sein Volk getröst",40080,5,0.327,0.0462,-25.56,84.938,0.972,0.042,0.0,0.132,0.297
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": Recap No. 24, da capo: Herrscher des Himmels, erhöre das Lallen",116466,4,0.388,0.293,-13.911,166.993,0.946,0.0336,0.0113,0.0381,0.733
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 33, Ich will dich mit Fleiß bewahren",60466,4,0.263,0.139,-20.73,93.407,0.99,0.0401,0.0356,0.155,0.279
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 59, Ich steh an deiner Krippen hier",113800,4,0.116,0.00842,-44.271,82.122,0.987,0.0435,0.00164,0.0992,0.139
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 3, Nun wird mein liebster Bräutigam",54346,8,0.395,0.0721,-20.954,83.974,0.986,0.0408,2.28e-05,0.104,0.0792
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 18, So geht denn hin",53240,6,0.314,0.0217,-30.551,105.932,0.952,0.0481,0.000123,0.358,0.367
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 11, Und es waren Hirten in derselben Gegend",37266,6,0.425,0.0208,-25.638,123.31,0.972,0.0626,0.0,0.111,0.157
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 7, Er ist auf Erden kommen arm",181920,7,0.18,0.0332,-28.174,76.207,0.956,0.0503,0.000687,0.124,0.189
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 37, Und da acht Tage um waren",30106,4,0.504,0.037,-23.841,130.199,0.968,0.0712,0.0,0.446,0.441
+"Suite No. 5 in C Minor, BWV 1011: VI. Gigue",155981,6,0.416,0.0158,-29.375,62.157,0.972,0.0436,0.102,0.111,0.236
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 54, Herr, wenn die stolzen Feinde schnauben",288186,4,0.37,0.228,-18.218,153.771,0.974,0.0352,0.0899,0.0738,0.546
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 2, Es begab sich aber zu der Zeit",75293,8,0.537,0.0271,-25.774,84.156,0.914,0.131,0.0,0.124,0.227
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 45, Wo ist der neugeborne König der Jüden",115480,3,0.411,0.119,-20.169,47.245,0.987,0.0483,0.0,0.266,0.192
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 43, Ehre sei dir, Gott, gesungen",375653,4,0.534,0.314,-20.029,109.757,0.971,0.0343,1.01e-05,0.177,0.727
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 41, Ich will nur dir zu Ehren leben",266560,3,0.528,0.234,-22.059,108.064,0.927,0.0449,0.0,0.157,0.849
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 58, Als sie nun den König gehöret hatten",89600,3,0.443,0.00838,-26.661,129.864,0.962,0.0827,0.0,0.107,0.144
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 14, Was Gott dem Abraham verheißen",46320,6,0.506,0.0283,-28.457,112.427,0.95,0.0493,0.0,0.116,0.125
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 47, Erleucht auch meine finstre Sinnen",250706,3,0.277,0.0437,-28.348,70.689,0.989,0.0402,0.00422,0.149,0.325
+"Suite No. 6 in D Major, BWV 1012: V. Gavotte I and II",222056,6,0.45,0.0855,-19.89,115.477,0.982,0.0573,0.00041,0.133,0.684
+VI Suite in D Major: I. Preludio,213646,5,0.393,0.252,-16.382,126.252,0.907,0.0571,0.114,0.316,0.531
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 23, Wir singen dir in deinem Heer",77880,5,0.206,0.0898,-20.696,103.217,0.982,0.037,0.0241,0.294,0.0882
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 24, Herrscher des Himmels, erhöre das Lallen",108080,6,0.462,0.286,-15.111,84.409,0.945,0.0288,0.0352,0.0943,0.715
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 31, Schließe, mein Herze, dies selige Wunde",333253,4,0.302,0.0122,-29.813,66.608,0.973,0.0514,0.0,0.146,0.111
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 51, Ach, wann wird die Zeit erscheinen?",381906,3,0.306,0.0331,-26.649,122.397,0.969,0.0605,0.0,0.185,0.231
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 36, Fallt mit Danken, fallt mit Loben",330026,4,0.277,0.137,-19.999,136.061,0.991,0.0377,0.0492,0.198,0.306
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 12, Brich an, o schönes Morgenlicht",77666,6,0.259,0.121,-20.054,67.898,0.988,0.0371,0.0051,0.257,0.223
+"Suite No. 6 in D Major, BWV 1012: IV. Sarabande",258411,6,0.234,0.00594,-26.466,168.102,0.991,0.0475,4.44e-05,0.0898,0.207
+"Keyboard Concerto in D Minor, BWV 974 (after Oboe Concerto in D Minor, S. Z799 by Alessandro Marcello): II. Adagio",213454,4,0.312,0.0191,-33.032,73.951,0.993,0.0448,0.857,0.105,0.039
+"Suite No. 6 in D Major, BWV 1012: I. Prélude",222262,7,0.381,0.0926,-25.348,129.829,0.982,0.0643,0.00569,0.103,0.727
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 53, Zwar ist solche Herzensstube",58440,3,0.21,0.157,-23.489,110.584,0.989,0.0531,0.0169,0.314,0.438
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 28, Dies hat er alles uns getan",47346,5,0.228,0.155,-19.596,123.367,0.987,0.0409,9.98e-05,0.109,0.326
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 26, Lasset uns nun gehen gen Bethlehem",40613,5,0.468,0.337,-20.599,126.706,0.982,0.0344,0.0,0.682,0.85
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 61, So geht! Genug, mein Schatz geht nicht von hier",119413,3,0.332,0.0363,-24.718,94.752,0.936,0.0377,0.000113,0.168,0.147
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 55, Da berief Herodes die Weisen heimlich",42053,3,0.524,0.0188,-27.088,114.853,0.861,0.107,0.0,0.108,0.586
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 5, Wie soll ich dich empfangen",87053,8,0.0897,0.049,-28.928,83.875,0.987,0.0404,0.42,0.0956,0.163
+"Suite No. 5 in C Minor, BWV 1011: IV. Sarabande",171693,7,0.19,0.00386,-35.524,106.32,0.963,0.0465,0.434,0.107,0.103
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 56, Du Falscher, suche nur den Herrn zu fällen",51360,3,0.471,0.0407,-21.954,71.398,0.915,0.0435,0.0,0.201,0.312
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 9, Ach, mein herzliebes Jesulein",77760,7,0.258,0.136,-21.669,131.151,0.96,0.0521,0.856,0.112,0.209
+"Christmas Oratorio, BWV 248, Pt. 4 ""For the Feast of the Circumcision"": No. 40, Wohlan, dein Name soll allein",89040,3,0.274,0.102,-23.514,84.986,0.978,0.049,0.00013,0.247,0.281
+"The Art of Fugue, BWV 1080: Contrapunctus IV",201030,2,0.472,0.281,-11.712,85.967,0.94,0.033,0.0518,0.106,0.456
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 52, Mein Liebster herrschet schon",27306,0,0.467,0.0451,-25.806,99.827,0.976,0.043,6.09e-05,0.11,0.246
+"Clavier-Übung III: Christ, unser Herr, zum Jordan kam alio modo manualiter, BWV 685",82971,1,0.164,0.0139,-33.965,130.849,0.984,0.0414,0.962,0.129,0.171
+"The Art of Fugue, BWV 1080: Contrapunctus XI à 4",278280,1,0.549,0.266,-11.557,82.033,0.97,0.0372,0.619,0.107,0.471
+"The Art of Fugue, BWV 1080: Contrapunctus inversus XIIIa à 3",123704,1,0.4,0.326,-12.339,148.615,0.943,0.0359,0.4,0.428,0.589
+"Clavier-Übung III: Duetto II, BWV 803",215831,1,0.185,0.0147,-33.081,84.373,0.982,0.0391,0.97,0.194,0.221
+"Clavier-Übung III: Dies sind die heil'gen zehn Gebot' a2 Clav et Ped fermo in Canone, BWV 678",342167,2,0.155,0.0151,-29.393,66.727,0.944,0.0481,0.981,0.11,0.0514
+"Clavier-Übung III: Fuga super Jesus Christus unser Heiland a 4 manualiter, BWV 689",281150,1,0.0653,0.0482,-21.386,56.699,0.979,0.0422,0.973,0.0672,0.0773
+"The Art of Fugue, BWV 1080: Contrapunctus XVIII",397691,1,0.165,0.213,-12.765,60.352,0.957,0.0395,0.572,0.119,0.195
+"The Art of Fugue, BWV 1080: Canon alla decima (2)",128593,1,0.374,0.233,-14.086,156.645,0.834,0.05,0.271,0.162,0.583
+"Clavier-Übung III: Christ, unser Herr, zum Jordan kam a 2 Clav è Canto fermo im Pedal, BWV 684",247397,1,0.248,0.11,-27.776,79.775,0.945,0.0361,0.981,0.147,0.315
+"The Art of Fugue, BWV 1080: Contrapunctus V",270482,2,0.166,0.16,-13.509,82.218,0.8,0.0347,0.811,0.128,0.0967
+"Clavier-Übung III: Duetto I, BWV 802",151223,1,0.183,0.0407,-29.67,131.427,0.933,0.0379,0.919,0.0982,0.168
+"The Art of Fugue, BWV 1080: Canon per augmentationem in contrario motu",365730,2,0.296,0.115,-16.357,113.49,0.939,0.0481,0.459,0.135,0.139
+"The Art of Fugue, BWV 1080: Contrapunctus III",172588,2,0.285,0.177,-14.302,109.035,0.958,0.038,0.212,0.111,0.174
+"The Art of Fugue, BWV 1080: Contrapunctus inversus XIIIb à 3",128239,1,0.481,0.374,-10.747,143.751,0.951,0.0407,0.553,0.244,0.601
+"Clavier-Übung III: Aus tiefer Not schrei' ich zu Dir a 6 in Organo pleno con Pedale doppio, BWV 686",522901,1,0.147,0.282,-12.849,138.127,0.83,0.0325,0.948,0.0743,0.041
+"Clavier-Übung III: Fughetta super Dies sind die heil'gen zehn Gebot' manualiter, BWV 679",104158,2,0.297,0.0521,-29.117,85.884,0.99,0.0422,0.983,0.135,0.54
+"The Art of Fugue, BWV 1080: Contrapunctus VIII à 3",283032,1,0.566,0.282,-13.301,82.708,0.973,0.0443,0.848,0.0743,0.547
+"Clavier-Übung III: Duetto IV, BWV 805",167064,1,0.192,0.04,-33.805,78.007,0.949,0.0371,0.974,0.144,0.381
+"Clavier-Übung III: Kyrie! Gott Vater in Ewigkeit alio modo manualiter, BWV 672",87960,3,0.125,0.000563,-32.229,73.038,0.988,0.0506,0.937,0.112,0.434
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 34, Und die Hirten kehrten wieder um",22626,0,0.505,0.0273,-23.349,111.249,0.942,0.121,0.0,0.546,0.723
+"The Art of Fugue, BWV 1080: Canon alla decima (1)",288030,1,0.361,0.0827,-18.597,71.946,0.994,0.0405,0.000444,0.0873,0.48
+"Clavier-Übung III: Fughetta super Dies sind die heil'gen zehn Gebot' manualiter, BWV 679",104158,2,0.297,0.0521,-29.117,85.884,0.99,0.0422,0.983,0.135,0.54
+"Clavier-Übung III: Kyrie! Gott Vater in Ewigkeit Canto fermo in Soprano a 2 Clav et Ped, BWV 669",253098,4,0.209,0.00594,-30.659,69.025,0.872,0.0476,0.965,0.105,0.18
+"Clavier-Übung III, Bonustrack, andere Registrierung: Kyrie! Gott Vater in Ewigkeit alio modo manualiter, BWV 672",90253,1,0.0784,0.000874,-42.614,81.718,0.995,0.0433,0.919,0.109,0.155
+"Clavier-Übung III: Kyrie! Gott Heiliger Geist à 5 Canto fermo in Basso Cum Organo Pleno, BWV 671",287172,3,0.165,0.145,-16.444,129.299,0.946,0.0398,0.914,0.107,0.0566
+"The Art of Fugue, BWV 1080: Contrapunctus VII à 4 per augmentationem et diminutionem",295019,1,0.138,0.201,-12.406,97.819,0.906,0.0348,0.579,0.106,0.0885
+"The Art of Fugue, BWV 1080: Contrapunctus XVIII",397691,1,0.165,0.213,-12.765,60.352,0.957,0.0395,0.572,0.119,0.195
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 60, Und Gott befahl ihnen im Traum",24160,0,0.308,0.00951,-30.75,194.095,0.94,0.11,0.0,0.133,0.159
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 62, Nun mögt ihr stolzen Feinde schrecken",256346,3,0.428,0.0881,-23.791,92.571,0.95,0.0382,0.000545,0.12,0.407
+"Clavier-Übung III: Kyrie! Gott heiliger Geist, BWV 674",68656,3,0.175,0.0505,-25.199,73.155,0.947,0.0373,0.388,0.111,0.156
+"The Art of Fugue, BWV 1080: Contrapunctus X à 4 alla decima",237644,1,0.31,0.213,-12.636,129.683,0.938,0.0371,0.0624,0.0924,0.377
+"Clavier-Übung III: Kyrie! Gott Vater in Ewigkeit alio modo manualiter, BWV 672",87960,3,0.125,0.000563,-32.229,73.038,0.988,0.0506,0.937,0.112,0.434
+"Clavier-Übung III: Allein Gott in der Höh' sei Ehr' à 3 Canto fermo in Alto, BWV 675",190616,3,0.175,0.0359,-32.158,68.463,0.926,0.0467,0.635,0.0891,0.196
+"Clavier-Übung III, Bonustrack, andere Registrierung: Duetto I, BWV 802",174179,1,0.136,0.0217,-31.622,85.926,0.984,0.0398,0.925,0.143,0.127
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 52, Mein Liebster herrschet schon",27306,0,0.467,0.0451,-25.806,99.827,0.976,0.043,6.09e-05,0.11,0.246
+"Clavier-Übung III: Fuga in Es-Dur à 5 con pedale pro Organo pleno, BWV 552",485396,1,0.0733,0.199,-15.346,73.609,0.848,0.0345,0.899,0.096,0.0875
+"The Art of Fugue, BWV 1080: Contrapunctus inversus XIIIb à 3",128239,1,0.481,0.374,-10.747,143.751,0.951,0.0407,0.553,0.244,0.601
+"Clavier-Übung III: Christ, unser Herr, zum Jordan kam alio modo manualiter, BWV 685",82971,1,0.164,0.0139,-33.965,130.849,0.984,0.0414,0.962,0.129,0.171
+"Christmas Oratorio, BWV 248, Pt. 1 ""For the First Day of Christmas"": No. 6, Und sie gebar ihren ersten Sohn",24840,0,0.356,0.0138,-30.204,189.263,0.943,0.138,0.0,0.407,0.247
+"Christmas Oratorio, BWV 248, Pt. 3 ""For the Third Day of Christmas"": No. 32, Ja, ja, mein Herz soll es bewahren",24706,0,0.396,0.0214,-26.381,77.735,0.958,0.0519,0.0,0.297,0.347
+"Clavier-Übung III: Vater unser im Himmelreich à 2 Clav et Pedal è Canto fermo in Canone, BWV 682",432200,2,0.0978,0.0267,-30.327,75.245,0.822,0.0431,0.908,0.11,0.249
+"Christmas Oratorio, BWV 248, Pt. 6 ""For the Feast of Epiphany"": No. 63, Was will der Höllen Schrecken nun",48800,3,0.387,0.121,-19.792,89.345,0.986,0.035,0.000406,0.0822,0.094
+"The Art of Fugue, BWV 1080: Canon in hypodiatesseron al roverscio e per augmentationem",296487,1,0.188,0.12,-17.062,75.359,0.913,0.0489,0.0653,0.0922,0.091
+"Christmas Oratorio, BWV 248, Pt. 5 ""For the First Sunday in the New Year"": No. 44, Da Jesus geboren war zu Bethlehem",23613,0,0.522,0.0219,-26.621,75.835,0.941,0.0951,0.0,0.448,0.343
+"Clavier-Übung III: Christe, aller Welt Trost Canto fermo in Tenore a 2 Clav et Pedal, BWV 670",342314,4,0.101,0.00355,-30.76,91.371,0.863,0.0506,0.97,0.0989,0.214
+"The Art of Fugue, BWV 1080: Contrapunctus II",142762,3,0.285,0.262,-10.248,148.921,0.958,0.032,0.603,0.0965,0.287
+"The Art of Fugue, BWV 1080: Canon alla decima (2)",128593,1,0.374,0.233,-14.086,156.645,0.834,0.05,0.271,0.162,0.583
+"Clavier-Übung III: Christ, unser Herr, zum Jordan kam a 2 Clav è Canto fermo im Pedal, BWV 684",247397,1,0.248,0.11,-27.776,79.775,0.945,0.0361,0.981,0.147,0.315
+"The Art of Fugue, BWV 1080: Contrapunctus IX à 4 alla duodecima",132782,1,0.509,0.526,-10.666,124.789,0.97,0.0356,0.938,0.164,0.665
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 22, So recht, ihr Engel, jauchzt und singet",24586,0,0.689,0.103,-20.854,107.053,0.979,0.454,0.0,0.374,0.434
+"The Art of Fugue, BWV 1080: Canon duodecima",173048,1,0.263,0.11,-20.715,123.507,0.968,0.0506,0.658,0.13,0.164
+"The Art of Fugue, BWV 1080: Contrapunctus inversus XIIIa à 3",123704,1,0.4,0.326,-12.339,148.615,0.943,0.0359,0.4,0.428,0.589
+"Clavier-Übung III: Duetto III, BWV 804",183302,1,0.214,0.0155,-35.525,78.183,0.959,0.0366,0.994,0.135,0.662
+"Clavier-Übung III: Fugetta super Allein Gott in der Höh' sei Ehr' manualiter, BWV 677",76193,2,0.363,0.0242,-26.533,63.669,0.986,0.04,0.791,0.0909,0.774
+"The Art of Fugue, BWV 1080: Contrapunctus inversus XII à 4",128685,1,0.202,0.169,-14.921,169.031,0.929,0.0432,0.000508,0.119,0.294
+"Christmas Oratorio, BWV 248, Pt. 2 ""For the Second Day of Christmas"": No. 16, Und das habt zum Zeichen",25040,0,0.297,0.00947,-36.436,83.246,0.925,0.0651,0.0,0.148,0.136
+"Nocturne No. 2 in E-Flat Major, Op. 9 No. 2",273666,64,0.44,0.00925,-32.452,129.129,0.984,0.0468,0.936,0.0873,0.0908
+One Summer Day,189800,63,0.41,0.196,-15.956,78.823,0.953,0.0383,0.892,0.0974,0.0622
+Beving: Ala,120853,63,0.324,0.116,-22.841,79.487,0.986,0.0348,0.926,0.113,0.299
+The Girl From Ipanema,200360,62,0.541,0.321,-14.418,133.531,0.714,0.0329,0.00345,0.101,0.549
+Gnossienne No. 1,296480,62,0.376,0.00579,-31.615,71.827,0.996,0.0576,0.944,0.0882,0.0369
+Clair de lune,347426,59,0.365,0.01,-25.268,135.048,0.995,0.0519,0.924,0.0584,0.0364
+The Shire,149480,62,0.45,0.0142,-23.669,92.137,0.943,0.0371,0.196,0.101,0.158
+Pathos,426520,57,0.441,0.375,-14.426,92.508,0.925,0.0425,0.932,0.103,0.0376
+"16 Waltzes, Op. 39: No. 15 In A Flat Major",94333,63,0.387,0.00906,-34.559,67.855,0.996,0.0455,0.889,0.0985,0.133
+Ultraviolet,93657,63,0.248,0.0621,-31.174,68.537,0.988,0.0362,0.873,0.144,0.0398
+Henry V: Henry V: Touch her soft lips and part,93840,59,0.146,0.019,-31.365,81.526,0.92,0.0476,0.878,0.0864,0.0492
+"Bagatelle No. 25 in A Minor, WoO 59 ""Für Elise""",212066,63,0.289,0.0306,-30.79,125.61,0.987,0.0446,0.911,0.102,0.118
+A Model of the Universe,172444,62,0.336,0.044,-29.255,90.243,0.982,0.0456,0.96,0.221,0.0666
+The Tree,199166,62,0.316,0.00329,-38.901,90.804,0.994,0.0482,0.957,0.0933,0.415
+"Solfeggio, H. 220",73093,63,0.312,0.208,-24.082,125.072,0.991,0.0415,0.932,0.0856,0.816
+"Handel / Orch. Hale: Keyboard Suite No. 4 in D Minor, HWV 437: III. Sarabande",207266,62,0.0939,0.0336,-24.041,67.359,0.927,0.0606,0.83,0.0954,0.0516
+Camping,78874,64,0.367,0.107,-20.273,129.368,0.862,0.0471,0.926,0.107,0.146
+Notturno for Strings and Harp,192419,58,0.0979,0.0801,-19.643,75.314,0.941,0.0458,0.431,0.115,0.0608
+Cavalleria rusticana: Intermezzo,243106,58,0.0807,0.0644,-25.724,173.113,0.874,0.0491,0.895,0.212,0.0345
+The Theory of Everything,68691,62,0.421,0.118,-17.703,104.03,0.842,0.0408,0.938,0.115,0.175
+"16 Waltzes, Op. 39 (1867 version): No. 15 in A-Flat Major",85240,62,0.406,0.0062,-39.131,79.377,0.996,0.0573,0.95,0.0664,0.216
+"13 Pieces, Op. 76: No. 2 Etude",71773,62,0.254,0.15,-26.242,71.912,0.983,0.0375,0.882,0.0997,0.648
+"6 Chants polonais, S. 480: No. 2, Frühling (Wiosna, Spring) [After Chopin's Op. 74]",131333,62,0.407,0.00616,-35.91,95.761,0.994,0.0384,0.949,0.0721,0.162
+"The Well-Tempered Clavier, Book 1: Prelude No. 1 in C Major, BWV 846/1",112226,58,0.152,0.0527,-34.305,79.663,0.991,0.0424,0.885,0.0893,0.332
+"16 Waltzes, Op. 39: No. 9 In D Minor",85706,62,0.45,0.00251,-38.718,62.44,0.995,0.0535,0.926,0.0571,0.0896
+"Goldberg Variations, BWV 988: Aria",184853,60,0.454,0.0139,-29.966,130.242,0.995,0.0513,0.943,0.0736,0.243
+Antar (After N. Rimsky-Korsakov): No. 7. Ravel: Allegretto,65960,60,0.152,0.0116,-33.668,137.649,0.749,0.0387,0.855,0.294,0.0387
+"The Four Seasons: Concerto No. 4 in F Minor, RV 297 ""L'inverno"" (winter): I. Allegro non molto",201853,63,0.4,0.247,-18.249,162.078,0.818,0.0423,0.64,0.119,0.394
+"Préludes / Book 2, L. 123: 5. Bruyères - Home Session",216061,58,0.3,0.0405,-31.023,63.821,0.992,0.0449,0.948,0.138,0.233
+"Lyric Pieces, Book 1, Op. 12: Arietta",83226,61,0.427,0.0204,-31.351,111.242,0.996,0.0405,0.938,0.274,0.346
+"Piano Concerto No. 2 in C Minor, Op. 18: 2. Adagio sostenuto",644272,60,0.194,0.0545,-24.877,140.966,0.983,0.0366,0.945,0.0551,0.0385
+"Wiegenlied, Op. 49, No. 4 (Arr. for Cello and Piano) [Brahms Lullaby]",109800,60,0.184,0.00833,-33.503,61.541,0.989,0.0519,0.596,0.104,0.211
+"Liebestraum No. 3 in A-Flat Major, S. 541 / 3",293146,60,0.279,0.0292,-26.804,136.732,0.987,0.0406,0.902,0.104,0.0338
+"Six Pieces, Op. 51, TH 143: VI. Valse sentimentale. Tempo di Valse",141706,59,0.252,0.0578,-26.184,108.013,0.953,0.0518,0.0163,0.0721,0.0391
+"Reflection - From ""Mulan"" (Feat. Guo Gan)",254667,55,0.263,0.0761,-19.135,105.924,0.947,0.0349,0.681,0.0813,0.0552
+"Mozart: Piano Sonata No. 16 in C Major, K. 545 ""Sonata facile"": II. Andante",457373,36,0.233,0.00862,-41.291,179.098,0.995,0.0528,0.899,0.0892,0.154
+I Love You Too Much,155320,55,0.403,0.255,-9.601,206.198,0.854,0.0428,9.5e-06,0.198,0.21
+Pachelbel: Canon and Gigue in D Major: Canon,300613,60,0.123,0.15,-16.647,84.183,0.714,0.035,0.913,0.103,0.0904
+"Mozart: Piano Concerto No. 20 in D Minor, K.466: II. Romance",558920,30,0.207,0.0418,-24.07,79.14,0.988,0.0344,0.818,0.104,0.0776
+"Mozart: Piano Concerto No. 20 in D Minor, K.466: I. Allegro",804645,30,0.289,0.0958,-21.467,70.554,0.981,0.0391,0.835,0.116,0.108
+"Mozart: Piano Sonata No. 16 in C Major, K. 545 ""Sonata facile"": I. Allegro",251440,31,0.333,0.0386,-32.885,73.32,0.993,0.0358,0.932,0.0735,0.399
+"Mozart: Piano Concerto No. 20 in D Minor, K.466: III. Allegro assai",423160,26,0.364,0.164,-20.4,72.936,0.986,0.0424,0.923,0.0623,0.162
+"Mozart: Piano Concerto No. 23 in A Major, K. 488: II. Adagio",442813,26,0.213,0.0115,-29.311,95.617,0.985,0.0392,0.923,0.0914,0.0393
+"Mozart: Piano Concerto No. 23 in A Major, K. 488: I. Allegro",618066,25,0.273,0.102,-21.36,141.148,0.989,0.0401,0.932,0.0857,0.138
+"Mozart: Piano Sonata No. 16 in C Major, K. 545 ""Sonata facile"": III. Rondo - Allegretto",92737,24,0.414,0.0584,-31.121,113.227,0.993,0.0336,0.941,0.0805,0.591
+"Mozart: Piano Concerto No. 23 in A Major, K. 488: III. Allegro assai",457266,24,0.3,0.159,-19.31,141.59,0.989,0.0398,0.921,0.0911,0.341
+"Rêverie, L. 68: Rêverie",257000,58,0.296,0.00896,-31.948,69.44,0.994,0.0394,0.91,0.0815,0.0673
+"Symphony No. 33 in B-Flat Major, K. 319: I. Allegro assai",334320,10,0.367,0.25,-12.852,73.952,0.961,0.0326,0.869,0.0947,0.2
+Fantasie en Fa Mineur (reconstruite par Florent Albrecht),573748,6,0.425,0.132,-25.239,128.802,0.977,0.0464,0.906,0.131,0.211
+"Capriccio, K. 395",316573,3,0.337,0.167,-24.865,75.365,0.976,0.0471,0.921,0.103,0.0813
+"Fantaisie en Ré Mineur, K. 397 (achevé par August Eberhard Müller)",394725,3,0.47,0.0541,-24.773,133.031,0.977,0.0518,0.886,0.0873,0.122
+"Bassoon Concerto in B-Flat Major, K. 191/186e: II. Andante ma adagio",350663,6,0.164,0.0357,-25.26,81.659,0.995,0.0453,0.913,0.0656,0.136
+"Präludium (Fantasie) und Fugue en Ut Majeur, K. 394",607453,4,0.4,0.149,-24.388,123.837,0.986,0.0395,0.92,0.0888,0.16
+"Modulierendes Präludium en Ut Majeur, K. 624",314653,4,0.361,0.178,-24.989,116.343,0.967,0.0471,0.87,0.145,0.127
+"Fantasie en Fa Mineur, K. 608 (transcription pour 2 mains par Muzio Clementi)",809333,3,0.469,0.0744,-26.03,96.78,0.986,0.0531,0.921,0.108,0.204
+"Fantaisie en Ut Mineur, K. 475",892600,4,0.414,0.033,-24.91,83.04,0.983,0.0634,0.899,0.0744,0.0786
+"Fantasie en Ut Mineur, K. 396 (transcription par Maximilian Stadler)",792760,3,0.378,0.089,-24.49,80.421,0.975,0.0483,0.851,0.112,0.13
+"13 Pieces, Op. 76: No. 3 Carillon",95226,59,0.253,0.0151,-31.25,72.412,0.992,0.0373,0.862,0.071,0.0505
+3 Spirituals for Orchestra: No. 2. Kum Bab Yah,170213,56,0.141,0.00268,-37.571,140.372,0.945,0.0427,0.601,0.0756,0.0386
+saman,131923,60,0.583,0.0238,-32.244,108.74,0.994,0.0369,0.847,0.103,0.426
+"Concerto for Strings in G Major, RV 151, ""Alla Rustica"": I. Presto",79840,63,0.433,0.291,-17.56,106.65,0.903,0.0501,0.907,0.367,0.631
+"Serenade for Strings in E Major, Op. 22, B. 52: II. Tempo di valse",432533,61,0.0,0.0842,-19.397,0.0,0.755,0.0,0.889,0.262,0.0
+Con Te Partirò,250983,66,0.241,0.367,-7.95,135.267,0.844,0.0311,0.00279,0.0873,0.302
+Chalkboard,65040,61,0.432,0.109,-15.925,92.682,0.889,0.0368,0.772,0.0939,0.0797
+Symphony No. 5: IV. Adagietto. Sehr langsam,540666,56,0.171,0.0163,-29.141,91.204,0.912,0.0414,0.731,0.0893,0.0341
+"2 Aquarelles: Lento, ma non troppo",132120,57,0.176,0.0534,-27.626,71.673,0.97,0.0406,0.915,0.29,0.0332
+"Prélude in E minor, Op. 28, No. 4",146760,60,0.388,0.00269,-32.97,63.386,0.995,0.0516,0.869,0.063,0.0397
+"Consolations, S. 172: No. 3 in D-Flat Major. Lento, placido",254000,58,0.368,0.00363,-36.759,69.363,0.993,0.035,0.922,0.137,0.085
+"Waltz No. 19 in A minor, Op. posth.",132666,61,0.308,0.0261,-37.242,69.156,0.984,0.042,0.928,0.0749,0.148
+"Après un rêve, Op. 7, No. 1 (Arr. for Cello and Piano)",176756,56,0.173,0.0639,-23.378,100.981,0.989,0.0456,0.92,0.0953,0.0441
+for you,174866,57,0.328,0.00758,-26.281,92.095,0.988,0.039,0.937,0.109,0.151
+The Tree,199166,62,0.316,0.00329,-38.901,90.804,0.994,0.0482,0.957,0.0933,0.415
+Christmas Eve / Sarajevo 12/24 - Instrumental,205333,53,0.292,0.567,-9.487,186.405,0.197,0.0316,0.852,0.0947,0.156
+"Carnival of the Animals, R. 125: The Swan",184706,57,0.0948,0.00754,-33.123,162.924,0.994,0.0437,0.894,0.0734,0.0388
+"Serenade in B-Flat Major, K. 361 ""Gran Partita"": III. Adagio",330000,58,0.171,0.037,-25.191,67.89,0.991,0.0409,0.898,0.123,0.037
+"Rêverie, L. 68",233400,57,0.25,0.00904,-31.617,62.541,0.995,0.041,0.922,0.0779,0.083
+Spiegel im spiegel,503475,57,0.123,0.0644,-28.383,84.208,0.707,0.0373,0.00365,0.11,0.0711
+My Little Brown Book,319733,58,0.381,0.187,-13.497,70.418,0.942,0.0322,0.135,0.161,0.215
+"The Well-Tempered Clavier, Book 1, BWV 846-869 / Prelude & Fugue in C Major, BWV 846: I. Prelude",139306,60,0.234,0.126,-25.427,133.998,0.989,0.0446,0.896,0.102,0.216
+Ave María (Arr. Víkingur Ólafsson) - Upright Piano,216213,56,0.33,0.00357,-33.142,100.741,0.995,0.0339,0.953,0.0989,0.121
+"The Council of Elrond (feat. ""Aniron"") [Theme for Aragorn and Arwen]",229106,60,0.104,0.111,-20.031,83.933,0.979,0.0517,0.926,0.11,0.039
+"Lyric Pieces, Book 9, Op. 68: Badnlat (Cradle Song)",131666,59,0.376,0.0192,-35.626,111.591,0.995,0.0394,0.874,0.0778,0.197
+Rose Bay,259120,60,0.228,0.0938,-27.523,90.738,0.972,0.0594,0.743,0.0979,0.207
+Jazz Suite No. 2: VI. Waltz 2,193600,61,0.322,0.184,-18.312,107.847,0.984,0.0338,0.902,0.0813,0.356
+"Thaïs, Act II: Méditation",320160,55,0.113,0.113,-21.668,77.076,0.717,0.0482,0.727,0.118,0.0396
+"Dear, Dolores - Dominique Charpentier Rework",122266,59,0.295,0.00814,-32.512,84.328,0.993,0.0454,0.894,0.124,0.152
+A Town with an Ocean View,180333,59,0.524,0.345,-15.659,106.621,0.489,0.0261,0.013,0.342,0.771
+"Symphony No. 8 in G Major, Op. 88, B. 163 (Arr. P. Breiner for Piano): III. Allegretto grazioso",131600,60,0.292,0.0645,-25.696,179.45,0.995,0.0465,0.927,0.113,0.281
+"5 Pieces, Op. 75, ""The Trees"": No. 3 Aspen",140333,58,0.0,0.00183,-35.278,0.0,0.995,0.0,0.905,0.0794,0.0
+"21 Hungarian Dances, WoO 1: Hungarian Dance No. 5 in G Minor. Allegro (Orch. Schmeling)",138706,61,0.358,0.167,-16.0,144.601,0.899,0.0354,0.96,0.103,0.6
+"Peer Gynt Suite No. 1, Op. 46: I. Morning Mood",253440,56,0.137,0.0262,-21.686,74.988,0.963,0.0394,0.903,0.234,0.0355
+"You've Got A Friend In Me - From ""Toy Story""",252560,53,0.393,0.0558,-19.95,71.13,0.993,0.0417,0.932,0.0861,0.0568
+"Ständchen, S. 560 (Trans. from Schwanengesang No. 4, D. 957)",442172,58,0.209,0.00299,-33.974,66.685,0.992,0.0491,0.955,0.104,0.039
+"Ave verum corpus, K.618 (Arr. for Piano by Franz Liszt)",195000,57,0.435,0.00354,-39.482,68.542,0.986,0.0485,0.909,0.096,0.179
+"Feed the Birds - From ""Mary Poppins""",261308,53,0.46,0.03,-22.209,133.167,0.987,0.0697,0.897,0.0975,0.0535
+Nocturne Op. 9 No. 2,302269,60,0.446,0.0146,-31.047,137.697,0.991,0.12,0.945,0.116,0.0815
+Together Again,121750,56,0.361,0.0634,-24.652,131.98,0.993,0.0383,0.93,0.0978,0.421
+"Tchaikovsky: The Nutcracker, Op. 71, Act II: No. 14a, Pas de deux. Andante maestoso",306533,57,0.139,0.148,-18.882,142.536,0.929,0.0386,0.954,0.106,0.0788
+Gymnopédie No. 1,205866,57,0.469,0.0128,-36.856,72.765,0.994,0.119,0.937,0.0941,0.354
+"The Four Seasons: Concerto No. 2 in G Minor, RV 315 ""L'estate"" (summer): III. Presto",167880,61,0.34,0.489,-15.316,157.024,0.83,0.0412,0.91,0.141,0.468
+"String Quartet No. 13 in B-Flat Major, Op. 130: II. Presto",123773,60,0.367,0.0814,-23.788,161.58,0.913,0.0439,0.931,0.105,0.62
+"Variations on a Rococo Theme, Op. 33, TH 57: Var: VI. Andante",156573,56,0.119,0.031,-31.179,88.858,0.964,0.0483,0.165,0.111,0.0388
+"Orfeo ed Euridice, Wq. 30 (Arranged by Sgambati): Melodie dell'Orfeo",181546,58,0.279,0.00461,-36.886,69.813,0.989,0.0439,0.982,0.0638,0.039
+Time To Say Goodbye,246266,63,0.201,0.462,-6.14,157.946,0.916,0.0342,0.00134,0.0932,0.395
+The Apology Song,172226,52,0.549,0.183,-11.398,93.965,0.911,0.0447,0.0,0.109,0.337
+"Piano Concerto No. 21 in C Major, K. 467: II. Andante",433666,61,0.137,0.0311,-28.208,179.223,0.982,0.0381,0.972,0.0908,0.063
+Five Pieces For Violin And Piano: I. Elegia (Andante Larghetto),179360,54,0.0694,0.00525,-35.45,73.566,0.972,0.0482,0.00751,0.0739,0.036
+Little Waltz,76668,57,0.369,0.0507,-31.822,67.757,0.992,0.0328,0.944,0.113,0.371
+Le roi s'amuse: Pavane,88000,60,0.199,0.0116,-33.62,90.921,0.951,0.0389,0.945,0.152,0.241
+"Cello Concerto in E Minor, RV 409: II. Allegro",61266,60,0.396,0.229,-18.866,144.615,0.988,0.0365,0.645,0.153,0.834
+"Symphony No. 5 in C Minor, Op. 67: I. Allegro con brio",442000,59,0.247,0.298,-15.661,97.784,0.957,0.0395,0.9,0.0943,0.157
+Una Mattina,203800,69,0.231,0.0297,-31.544,131.413,0.991,0.0579,0.878,0.0742,0.07
+Sleeping Lotus,152000,58,0.312,0.0268,-26.537,68.524,0.994,0.0369,0.885,0.107,0.188
+"Lieder ohne Worte (Songs without Words), Book 1, Op. 19b: Lied ohne Worte (Song without Words) No. 6 in G Minor, Op. 19, No. 6, ""Venezianisches Gondellied"" (Venetian Gondola Song)",124533,59,0.391,0.0356,-33.473,72.224,0.995,0.0461,0.892,0.0824,0.152
+Losar,221061,54,0.305,0.0384,-28.605,81.917,0.961,0.0301,0.902,0.0886,0.0856
+"Piano Concerto No. 5 in E-Flat Major, Op. 73 ""Emperor"": II. Adagio un poco mosso",431293,31,0.233,0.0248,-28.482,134.962,0.985,0.0423,0.933,0.0829,0.0536
+Opening Song - Merry-Go-Round of Life,153573,57,0.325,0.0947,-20.885,49.034,0.906,0.0333,0.869,0.571,0.0949
+"Piano Sonata No. 14 in C sharp minor, Op. 27/2, ""Moonlight"": Adagio sostenuto I.",188466,59,0.303,0.108,-27.433,126.931,0.994,0.0473,0.877,0.0805,0.18
+"Mozart: Piano Concerto No. 21 in C Major, K. 467: II. Andante",394160,54,0.154,0.0313,-28.734,183.005,0.978,0.0363,0.904,0.0886,0.107
+"Morgen, Op. 27 No. 4 (Arr. Reger for Piano)",232526,55,0.39,0.00152,-36.601,72.849,0.995,0.0479,0.926,0.0831,0.235
+"Piano Sonata No. 30 in E Major, Op. 109: I. Vivace ma non troppo, sempre legato",237833,8,0.347,0.032,-26.95,99.103,0.989,0.0366,0.903,0.0744,0.0674
+"String Quartet No.7 in F Major, Op. 59 No. 1: III. Adagio molto e mesto",753813,9,0.125,0.0353,-22.735,87.639,0.932,0.0411,0.507,0.165,0.0585
+"String Quartet No.7 in F Major, Op. 59 No. 1: I. Allegro",642773,5,0.229,0.0831,-18.772,77.059,0.922,0.0435,0.563,0.233,0.155
+"String Quartet No. 1 in F Major, Op. 18 No. 1: IV. Allegro molto - Live",399226,1,0.443,0.134,-20.168,122.061,0.972,0.0525,0.555,0.862,0.378
+"String Quartet No. 10 in E-Flat Major, Op. 74: IV. Allegretto con variazioni",456986,1,0.318,0.0522,-19.559,94.011,0.966,0.0413,0.798,0.117,0.245
+"String Quartet No. 4 in C Minor, Op. 18 No. 4: IV. Allegro - Live",280840,1,0.322,0.214,-20.503,153.873,0.964,0.0814,0.871,0.778,0.433
+"Piano Sonata No. 31 in A-Flat Major, Op. 110: I. Moderato cantabile molto espressivo",404894,1,0.361,0.0433,-26.942,126.359,0.988,0.0408,0.902,0.094,0.0973
+"String Quartet No. 4 in C Minor, Op. 18 No. 4: II. Andante scherzoso quasi Allegretto - Live",432453,1,0.478,0.0678,-25.084,75.591,0.979,0.0529,0.496,0.0858,0.341
+"String Quartet No. 5 in A Major, Op. 18 No. 5: III. Andante cantabile - Live",571253,1,0.323,0.0618,-22.41,110.318,0.973,0.0405,0.738,0.0908,0.226
+"String Quartet No. 9 in C Major, Op. 59 No. 3: III. Menuetto grazioso - Trio",316560,1,0.324,0.0696,-18.876,118.573,0.894,0.0417,0.793,0.11,0.367
+"String Quartet No. 2 in G Major, Op. 18 No. 2: II. Adagio cantabile - Allegro - Tempo I - Live",380053,0,0.169,0.0881,-23.592,58.046,0.955,0.0577,0.547,0.121,0.0751
+"String Quartet No. 8 in E Minor, Op. 59 No. 2: I. Allegro",674133,2,0.262,0.0843,-17.704,100.57,0.951,0.0438,0.687,0.132,0.0754
+"String Quartet No.7 in F Major, Op. 59 No. 1: II. Allegretto vivace e sempre scherzando",575573,3,0.358,0.126,-18.09,163.277,0.936,0.0525,0.682,0.154,0.241
+"String Quartet No. 8 in E Minor, Op. 59 No. 2: IV. Finale. Presto",380906,1,0.401,0.121,-17.5,137.486,0.937,0.0482,0.445,0.139,0.252
+"String Quartet No. 6 in B-Flat Major, Op. 18 No. 6: IV. La Malinconia - Live",508773,1,0.179,0.0909,-24.015,77.365,0.957,0.0488,0.776,0.712,0.0459
+"String Quartet No. 10 in E-Flat Major, Op. 74: III. Presto",341520,1,0.329,0.153,-17.592,83.91,0.955,0.0406,0.835,0.0819,0.474
+"String Quartet No. 5 in A Major, Op. 18 No. 5: IV. Allegro - Live",404160,1,0.324,0.169,-21.578,130.399,0.974,0.0435,0.714,0.923,0.385
+"String Quartet No. 10 in E-Flat Major, Op. 74: I. Poco Adagio",637106,1,0.309,0.062,-19.421,140.17,0.951,0.0431,0.601,0.159,0.106
+"String Quartet No. 5 in A Major, Op. 18 No. 5: II. Menuetto - Trio - Live",310213,1,0.241,0.0646,-23.127,173.604,0.983,0.062,0.608,0.06,0.234
+"String Quartet No. 1 in F Major, Op. 18 No. 1: III. Scherzo. Allegro molto & Trio - Live",201666,1,0.402,0.105,-20.789,153.28,0.977,0.0419,0.85,0.108,0.514
+"String Quartet No. 6 in B-Flat Major, Op. 18 No. 6: III. Scherzo. Allegro - Trio - Live",182786,1,0.453,0.206,-19.581,94.946,0.975,0.0461,0.569,0.0852,0.78
+"String Quartet No. 1 in F Major, Op. 18 No. 1: II. Adagio affettuoso ed appassionato - Live",576680,1,0.226,0.0511,-24.794,120.069,0.97,0.0478,0.438,0.0963,0.0394
+"Piano Sonata No. 30 in E Major, Op. 109: II. Prestissimo",160049,1,0.284,0.114,-20.877,70.028,0.991,0.0397,0.891,0.113,0.262
+"String Quartet No. 4 in C Minor, Op. 18 No. 4: I. Allegro ma non tanto - Live",527493,1,0.377,0.0647,-19.683,138.395,0.97,0.0474,0.533,0.136,0.337
+"String Quartet No. 9 in C Major, Op. 59 No. 3: IV. Allegro molto",399440,1,0.4,0.315,-14.79,136.474,0.911,0.0352,0.607,0.337,0.404
+"String Quartet No. 6 in B-Flat Major, Op. 18 No. 6: II. Adagio ma non troppo - Live",411720,1,0.234,0.0408,-26.58,93.227,0.964,0.0473,0.0617,0.146,0.124
+"Piano Sonata No. 32 in C Minor, Op. 111: II. Arietta. Adagio molto semplice cantabile",1025647,0,0.257,0.0429,-26.078,78.216,0.988,0.0405,0.913,0.0807,0.0423
+"String Quartet No. 2 in G Major, Op. 18 No. 2: I. Allegro - Live",477266,0,0.398,0.0799,-20.5,89.125,0.956,0.051,0.685,0.167,0.379
+"String Quartet No. 9 in C Major, Op. 59 No. 3: I. Introduzione. Andante con moto - Allegro vivace",716933,1,0.303,0.0665,-18.994,127.712,0.945,0.0425,0.677,0.141,0.145
+"String Quartet No. 1 in F Major, Op. 18 No. 1: I. Allegro con brio - Live",554773,1,0.369,0.0965,-21.336,144.238,0.983,0.0521,0.847,0.14,0.185
+"String Quartet No. 4 in C Minor, Op. 18 No. 4: III. Menuetto. Allegretto - Trio - Live",220173,1,0.339,0.0776,-20.674,136.765,0.976,0.0502,0.57,0.108,0.256
+"String Quartet No. 6 in B-Flat Major, Op. 18 No. 6: I. Allegro con brio - Live",365253,1,0.446,0.142,-19.582,126.587,0.975,0.042,0.744,0.062,0.352
+"String Quartet No. 2 in G Major, Op. 18 No. 2: III. Scherzo. Allegro & Trio - Live",253173,0,0.418,0.142,-20.737,162.74,0.971,0.0492,0.827,0.226,0.641
+"String Quartet No. 8 in E Minor, Op. 59 No. 2: II. Molto Adagio. Si tratta questo pezzo con molto di sentimento",679960,1,0.113,0.0263,-21.538,174.06,0.946,0.045,0.461,0.134,0.0398
+"String Quartet No. 5 in A Major, Op. 18 No. 5: I. Allegro - Live",385013,2,0.431,0.108,-20.287,144.726,0.974,0.0536,0.542,0.252,0.406
+"String Quartet No. 3 in D Major, Op. 18 No. 3: I. Allegro - Live",494866,2,0.303,0.0927,-19.539,94.056,0.966,0.0432,0.669,0.0416,0.146
+"Piano Sonata No. 31 in A-Flat Major, Op. 110: II. Allegro molto",141249,1,0.479,0.0657,-21.803,125.472,0.991,0.0598,0.928,0.0904,0.409
+"Piano Sonata No. 31 in A-Flat Major, Op. 110: III. Adagio ma non troppo",640193,1,0.393,0.0415,-26.008,130.078,0.993,0.0451,0.918,0.0859,0.0391
+"String Quartet No. 3 in D Major, Op. 18 No. 3: IV. Presto - Live",297346,1,0.375,0.208,-21.975,79.707,0.96,0.0634,0.886,0.879,0.429
+"String Quartet No. 10 in E-Flat Major, Op. 74: II. Adagio ma non troppo",555546,1,0.191,0.0325,-22.904,126.498,0.965,0.0446,0.412,0.111,0.0678
+"Piano Sonata No. 32 in C Minor, Op. 111: I. Maestoso - Allegro con brio ed appassionato",573333,1,0.407,0.138,-21.353,122.304,0.986,0.0455,0.915,0.082,0.159
+"String Quartet No. 8 in E Minor, Op. 59 No. 2: III. Allegretto",486160,1,0.262,0.0637,-17.323,76.398,0.956,0.0537,0.388,0.16,0.217
+"String Quartet No. 9 in C Major, Op. 59 No. 3: II. Andante con moto quasi Allegretto",595053,1,0.21,0.0341,-23.701,140.924,0.95,0.0434,0.574,0.11,0.101
+"String Quartet No. 8 in E Minor, Op. 59 No. 2: III. Allegretto",486160,1,0.262,0.0637,-17.323,76.398,0.956,0.0537,0.388,0.16,0.217
+"String Quartet No. 10 in E-Flat Major, Op. 74: II. Adagio ma non troppo",555546,1,0.191,0.0325,-22.904,126.498,0.965,0.0446,0.412,0.111,0.0678
+"String Quartet No. 6 in B-Flat Major, Op. 18 No. 6: IV. La Malinconia - Live",508773,1,0.179,0.0909,-24.015,77.365,0.957,0.0488,0.776,0.712,0.0459
+"String Quartet No. 3 in D Major, Op. 18 No. 3: III. Allegro - Live",165906,1,0.363,0.0468,-24.613,102.182,0.978,0.049,0.817,0.219,0.363
+"Piano Sonata No. 30 in E Major, Op. 109: III. Gesangvoll, mit innigster Empfindung. Andante molto cantabile ed espressivo",827896,1,0.346,0.0434,-26.173,69.632,0.992,0.055,0.927,0.0814,0.0635
+Sylvia: Act III: Divertissement: Variation - Valse,75106,58,0.346,0.0578,-22.644,97.259,0.932,0.0352,0.928,0.211,0.422
+Wave,176906,59,0.551,0.314,-20.679,144.926,0.83,0.0337,0.831,0.0861,0.873
+Christmas Canon,257986,48,0.286,0.362,-6.345,132.842,0.78,0.031,0.445,0.172,0.148
+Miroirs: III. Une barque sur l'océan,428152,55,0.17,0.0479,-27.021,75.664,0.981,0.0438,0.906,0.0795,0.0304
+"The Well-Tempered Clavier, Book 1, BWV 846-869 / Prelude & Fugue in C Major, BWV 846: I. Prelude",139306,58,0.25,0.125,-25.418,134.228,0.989,0.0447,0.897,0.101,0.209
+Prelude in G Major,234880,56,0.314,0.0249,-34.402,102.328,0.995,0.0469,0.938,0.0914,0.238
+Adieux,175492,61,0.224,0.00407,-37.107,73.558,0.987,0.0464,0.936,0.112,0.32
+Kiss The Rain,260653,60,0.56,0.0519,-22.616,132.691,0.99,0.0423,0.905,0.117,0.182
+Dies Irae,134746,57,0.272,0.346,-14.01,79.773,0.926,0.0317,0.931,0.0772,0.24
+"Sonata for Violin and Guitar in A Minor, Op. 2, No. 6, MS 26: Tempo di Walzer",98973,60,0.555,0.151,-16.742,146.782,0.882,0.0477,0.573,0.0832,0.732
+"Nocturne No. 1 in B flat minor, Op. 9 No. 1",334053,50,0.342,0.0179,-24.846,61.757,0.982,0.0387,0.906,0.0831,0.0382
+Instants,150466,58,0.572,0.109,-22.574,132.063,0.939,0.0406,0.925,0.11,0.635
+"Ave Maria, S. 558/12",391506,54,0.328,0.0083,-30.428,64.436,0.988,0.0389,0.93,0.0818,0.0374
+Sonata No. 42 in D Minor (Arr. Ólafsson),143531,55,0.33,0.00274,-37.342,61.088,0.992,0.0617,0.908,0.0668,0.188
+"12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",181693,55,0.168,0.00571,-36.245,78.043,0.995,0.0404,0.92,0.068,0.0705
+Lacrimosa,205493,58,0.0847,0.0856,-24.716,84.245,0.964,0.0405,0.592,0.289,0.0764
+"Ravel: Pavane pour une infante défunte, M. 19",346586,55,0.491,0.0176,-26.911,125.793,0.994,0.0644,0.927,0.0985,0.0901
+Air on a G String,289640,56,0.109,0.314,-11.27,172.773,0.982,0.039,0.895,0.108,0.0557
+Scheherazade: The Tale of the Kalendar Prince,200360,57,0.235,0.0639,-24.404,120.736,0.962,0.049,0.603,0.466,0.0781
+Bésame Mucho,241232,60,0.521,0.502,-8.521,95.028,0.886,0.0287,0.02,0.188,0.378
+Momentary,111525,59,0.611,0.126,-30.213,115.179,0.995,0.0445,0.889,0.0725,0.185
+"Lyric Pieces, Book 5, Op. 54: Nocturne",220773,56,0.296,0.0435,-29.73,72.282,0.987,0.0411,0.857,0.0786,0.0302
+"6 Pezzi, P. 44: No. 6. Internmezzo-serenata",146866,55,0.273,0.00735,-32.622,82.504,0.991,0.0375,0.936,0.0861,0.076
+"Lyric Pieces, Book 1, Op. 12: I. Arietta",85906,55,0.328,0.00278,-38.801,75.387,0.995,0.0566,0.868,0.105,0.194
+"Quizás, Quizás, Quizás",198213,62,0.589,0.45,-8.491,112.103,0.835,0.0657,1.07e-06,0.0824,0.367
+"Orchestral Suite No. 3 in D Major, BWV 1068: II. Air ""on the G String""",360493,58,0.168,0.0698,-27.22,112.654,0.924,0.0471,0.934,0.126,0.047
+"6 Album Leaves, Op. 2, JB 1:51: No. 2 in A Minor, Chanson. Moderato",97306,58,0.186,0.0268,-30.366,66.022,0.995,0.0443,0.824,0.0613,0.0748
+Primavera,442400,61,0.231,0.206,-13.593,141.628,0.965,0.0332,0.856,0.17,0.136
+"Tchaikovsky: The Nutcracker, Op. 71, Act 2: No. 13, Waltz of the Flowers",415813,57,0.149,0.128,-20.459,47.362,0.944,0.0462,0.928,0.0703,0.113
+Einaudi: Una mattina,190813,55,0.0975,0.0077,-34.135,87.152,0.988,0.0471,0.83,0.0603,0.0989
+"Nocturne No. 1 in B-Flat Minor, Op. 9 No. 1",286986,58,0.261,0.0149,-27.528,75.296,0.992,0.0419,0.897,0.102,0.0382
+"Liebestraume, S541/R211 : No. 3: Nocturne in A-Flat Major",270000,57,0.343,0.0342,-25.591,60.228,0.991,0.0406,0.92,0.1,0.0378
+"Suite Bergamasque, L. 75: III. Clair de lune (Andante très expressif)",279160,55,0.36,0.0249,-27.017,133.024,0.993,0.0463,0.932,0.0454,0.0396
+"3 Visions: No. 2, Summerland",293520,52,0.46,0.00618,-28.121,67.12,0.994,0.0481,0.89,0.0896,0.086
+Domestic Pressures,157221,57,0.201,0.133,-19.194,155.788,0.927,0.0387,0.961,0.116,0.0775
+"Le Carnaval des Animaux, R. 125: 13. Le Cygne",165306,56,0.167,0.02,-31.634,129.916,0.992,0.0413,0.928,0.0714,0.0431
+"Cambridge, 1963",101572,56,0.357,0.0878,-16.909,82.874,0.967,0.0392,0.98,0.102,0.654
+En nacelle,165693,52,0.429,0.0234,-29.753,116.163,0.995,0.0489,0.957,0.0962,0.0751
+"13 Pieces, Op. 76: No. 2. Etude",72106,58,0.327,0.23,-24.346,139.677,0.984,0.0437,0.895,0.0952,0.918
+Evenstar,195600,57,0.122,0.0407,-26.194,74.418,0.96,0.0457,0.847,0.104,0.0342
+"Scriabin: 24 Preludes, Op. 11: No. 21 in B-Flat Major",107000,52,0.221,0.00193,-43.209,69.843,0.992,0.0409,0.956,0.0805,0.347
+"Symphony No. 25 in G Minor, K. 183: I. Allegro con brio",460026,58,0.428,0.237,-13.764,79.904,0.987,0.0351,0.896,0.0849,0.357
+Spartacus: Adagio of Spartacus and Phrygia,549015,52,0.173,0.078,-22.365,129.338,0.827,0.0403,0.834,0.195,0.035
+Look To The Sky,140266,55,0.482,0.114,-22.504,132.356,0.91,0.034,0.966,0.0911,0.7
+Étude No. 8: Through the Window,340040,52,0.153,0.0282,-33.937,133.565,0.995,0.0446,0.896,0.0803,0.0734
+"Nocturne en Mi Bémol Majeur, Op. 9 No. 2",268426,59,0.427,0.0451,-24.698,119.78,0.99,0.041,0.913,0.112,0.0707
+"I Thought About Death, About Time",120000,54,0.19,0.0388,-34.654,140.96,0.994,0.0301,0.937,0.0956,0.117
+Le Cygne,214986,55,0.116,0.059,-26.632,94.137,0.983,0.0446,0.913,0.152,0.0393
+"Rhapsody on a Theme of Paganini, Op. 43: Variation No. 18 Andante cantabile",174653,49,0.205,0.0525,-23.841,88.316,0.98,0.0327,0.906,0.103,0.0511
+"Rêverie, L. 68: Rêverie",257000,54,0.296,0.00896,-31.948,69.432,0.994,0.0394,0.91,0.0825,0.0673
+"Vivaldi: The Four Seasons, Violin Concerto in F Minor, Op. 8 No. 4, RV 297 ""Winter"": II. Largo",142333,52,0.289,0.0983,-24.327,63.964,0.935,0.0476,0.506,0.107,0.283
+An Idea,158520,52,0.294,0.00785,-29.64,70.958,0.994,0.0667,0.956,0.0929,0.173
+"Pelléas et Mélisande, CD 93, Act III Scene 1: Mes longs cheveux descendent jusqu'au seuil de la tour - Live",364293,17,0.313,0.159,-19.97,88.022,0.984,0.067,0.00044,0.097,0.036
+"Piano Sonata No. 14 in C-Sharp Minor, Op. 27/2 ""Moonlight Sonata"": I. Adagio sostenuto",403333,56,0.278,0.00245,-41.53,139.161,0.995,0.0497,0.881,0.114,0.293
+"Pelléas et Mélisande, CD 93, Act I Scene 1: Qu'est-ce qui brille ainsi, au fond de l'eau? - Live",263573,3,0.315,0.144,-21.257,108.689,0.984,0.0524,0.00317,0.169,0.0422
+"Pelléas et Mélisande, CD 93, Act I Scene 2: Voici ce qu'il écrit à son frère Pelléas - Live",190413,3,0.293,0.0206,-29.475,77.976,0.97,0.0589,0.0,0.0959,0.0383
+"Pelléas et Mélisande, CD 93, Act I Scene 1: Je ne pourrai plus sortir de cette forêt - Live",250413,4,0.271,0.0706,-22.04,92.261,0.975,0.0473,0.000364,0.223,0.0398
+"Pelléas et Mélisande, CD 93, Act I: Prelude - Live",116786,5,0.161,0.0633,-26.271,131.327,0.933,0.0415,0.9,0.109,0.0334
+"Pelléas et Mélisande, CD 93, Act IV Scene 4: Quel est ce bruit? On ferme les portes - Live",284773,1,0.288,0.298,-15.206,87.083,0.956,0.083,0.0181,0.08,0.0503
+"Pelléas et Mélisande, CD 93, Act V: Êtes-vous seul dans la chambre, grand-père? - Live",164266,1,0.348,0.0521,-22.252,103.584,0.981,0.0505,8.4e-06,0.101,0.0392
+"Pelléas et Mélisande, CD 93, Act IV Scene 4: On dirait que ta voix a passé sur la mer au printemps! - Live",269160,1,0.308,0.237,-18.027,92.494,0.978,0.0584,0.0348,0.192,0.0528
+"Pelléas et Mélisande, CD 93, Act IV Scene 2: Interlude - Live",266960,1,0.127,0.0675,-19.211,83.388,0.961,0.0421,0.951,0.116,0.0305
+"Pelléas et Mélisande, CD 93, Act III Scene 2: Prenez garde; par ici, par ici - Live",168866,1,0.286,0.0631,-22.339,100.025,0.904,0.043,0.00169,0.181,0.0986
+"Pelléas et Mélisande, CD 93, Act IV Scene 1: Où vas-tu? Il faut que je te parle ce soir - Live",177026,1,0.384,0.159,-21.535,71.19,0.978,0.0906,0.000562,0.128,0.0724
+"Pelléas et Mélisande, CD 93, Act V: Ce n'est pas de cette petite blessure qu'elle peut mourir - Live",188186,1,0.274,0.0234,-26.183,129.349,0.982,0.0511,0.000104,0.231,0.0381
+"Pelléas et Mélisande, CD 93, Act III Scene 4: Ah! Ah! Petite mère a allumé sa lampe - Live",262840,1,0.255,0.0929,-18.338,79.873,0.979,0.0456,0.00027,0.0841,0.0392
+"Pelléas et Mélisande, CD 93, Act II Scene 3: Oui, c'est ici, nous y sommes - Live",322986,1,0.246,0.127,-21.56,168.914,0.968,0.0624,0.0179,0.112,0.04
+"Pelléas et Mélisande, CD 93, Act III Scene 3: À propos de Mélisande - Live",93306,1,0.379,0.0528,-24.214,91.36,0.974,0.056,0.0,0.13,0.102
+"Pelléas et Mélisande, CD 93, Act IV Scene 3: Oh! Cette pierre est lourde - Live",256972,1,0.337,0.0403,-23.471,126.863,0.976,0.0449,0.000215,0.153,0.0392
+"Pelléas et Mélisande, CD 93, Act II Scene 1: Vous ne savez pas où je vous ai menée? - Live",245973,2,0.334,0.223,-17.754,136.331,0.97,0.0675,0.022,0.0866,0.0392
+"Pelléas et Mélisande, CD 93, Act II Scene 2: Tiens, où est l'anneau que je t'avais donné? - Live",172520,2,0.358,0.183,-15.655,172.834,0.981,0.112,0.0,0.145,0.0905
+"Pelléas et Mélisande, CD 93, Act V: Mélisande, as-tu pitié de moi comme j'ai pitié de toi? - Live",126400,1,0.343,0.11,-18.304,145.42,0.982,0.0702,1.28e-06,0.165,0.0612
+"Pelléas et Mélisande, CD 93, Act III Scene 3: Interlude - Live",70333,1,0.223,0.00388,-36.473,72.749,0.992,0.0387,0.97,0.0827,0.034
+"Pelléas et Mélisande, CD 93, Act II Scene 2: Il est vrai que ce château est très vieux et très sombre - Live",152866,2,0.281,0.132,-19.274,90.103,0.985,0.0448,4.66e-06,0.151,0.0616
+"Pelléas et Mélisande, CD 93, Act I Scene 2: Interlude - Live",155160,2,0.136,0.0281,-27.314,87.881,0.958,0.0433,0.931,0.112,0.0279
+"Pelléas et Mélisande, CD 93, Act I Scene 3: Il fait sombre dans les jardins - Live",137000,2,0.296,0.132,-21.409,94.478,0.948,0.0557,0.000271,0.224,0.0699
+"Pelléas et Mélisande, CD 93, Act II Scene 1: Interlude - Live",223293,2,0.162,0.0175,-29.612,90.674,0.981,0.0438,0.924,0.245,0.0294
+"Pelléas et Mélisande, CD 93, Act III Scene 1: Je les noue, je les noue aux branches du saule - Live",205253,1,0.302,0.119,-21.635,173.667,0.973,0.0763,0.000146,0.29,0.0486
+"Pelléas et Mélisande, CD 93, Act V: Attention, je crois qu'elle s'éveille - Live",180933,1,0.272,0.0731,-25.286,81.886,0.979,0.0528,0.000261,0.263,0.0362
+"Pelléas et Mélisande, CD 93, Act II Scene 2: Interlude - Live",156613,1,0.158,0.0243,-29.574,132.822,0.981,0.0388,0.919,0.116,0.0422
+"Pelléas et Mélisande, CD 93, Act I Scene 1: Interlude - Live",212320,3,0.141,0.0263,-28.336,67.522,0.974,0.0437,0.962,0.205,0.0313
+"Pelléas et Mélisande, CD 93, Act III Scene 2: Interlude - Live",57720,1,0.147,0.0305,-18.98,92.97,0.974,0.0328,0.959,0.701,0.0381
+"Pelléas et Mélisande, CD 93, Act I Scene 2: Je n'en dis rien - Live",224760,3,0.265,0.0733,-23.248,77.511,0.981,0.0431,0.00316,0.219,0.0398
+"Pelléas et Mélisande, CD 93, Act I Scene 3: Hoé! Hisse hoé! Hoé! Hoé! - Live",262693,2,0.284,0.16,-22.097,77.973,0.937,0.0546,0.00761,0.113,0.0388
+"Pelléas et Mélisande, CD 93, Act IV Scene 4: C'est le dernier soir - Live",368440,1,0.331,0.213,-19.062,87.99,0.963,0.122,5.08e-05,0.126,0.056
+"Pelléas et Mélisande, CD 93, Act IV Scene 2: Pelléas part ce soir - Live",126706,1,0.418,0.125,-18.762,86.061,0.984,0.0942,0.0,0.262,0.116
+"Pelléas et Mélisande, CD 93, Act II Scene 1: C'est au bord d'une fontaine aussi qu'il vous a trouvée - Live",200440,2,0.299,0.178,-18.111,72.591,0.981,0.141,1.25e-05,0.449,0.0604
+"Pelléas et Mélisande, CD 93, Act IV Scene 2: Une grande innocence! - Live",283213,1,0.382,0.144,-16.424,137.574,0.966,0.0664,1.32e-06,0.204,0.0659
+"Pelléas et Mélisande, CD 93, Act III Scene 1: Oh! Oh! Mes cheveux descendent de la tour! - Live",181013,1,0.295,0.166,-19.336,73.69,0.978,0.0576,0.00742,0.343,0.056
+"Pelléas et Mélisande, CD 93, Act II Scene 2: Je suis ... je suis malade ici - Live",218720,2,0.321,0.122,-18.296,62.771,0.983,0.0686,0.000122,0.0714,0.0391
+"Pelléas et Mélisande, CD 93, Act V: As-tu aimé Pelléas? - Live",181160,1,0.312,0.0842,-19.612,100.868,0.98,0.0494,2.63e-05,0.386,0.0385
+"Pelléas et Mélisande, CD 93, Act V: Attention, attention, il faut parler à voix basse maintenant - Live",385013,1,0.128,0.0287,-28.861,78.365,0.972,0.0456,0.0338,0.098,0.0351
+"Pelléas et Mélisande, CD 93, Act III Scene 3: Ah! Je respire enfin! - Live",126640,1,0.344,0.276,-19.018,133.884,0.985,0.0487,0.0132,0.229,0.0821
+"Pelléas et Mélisande, CD 93, Act V: Qu'avez-vous fait? Vous allez la tuer - Live",158986,1,0.189,0.0868,-21.829,77.871,0.987,0.059,0.0102,0.407,0.0368
+"Pelléas et Mélisande, CD 93, Act III Scene 1: Interlude - Live",185120,1,0.0735,0.014,-28.465,80.207,0.981,0.0507,0.962,0.0831,0.0293
