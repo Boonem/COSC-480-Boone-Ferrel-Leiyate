@@ -6,15 +6,18 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
 from keras import layers
 from fuzzywuzzy import process
-
+from DataCollection import dataCollection
 
 import os
 
 # Sets file navigation to the script's folder
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+#Commented out following two lines until needed
 # List of predefined genres(test for fuzzywuzzy, add for more)
-available_genres = ["rock", "pop", "jazz", "classical", "hip-hop", "country"]
+#available_genres = ["rock", "pop", "jazz", "classical", "hip-hop", "country"]
+
+
 
 def get_genre():
     input_genre = input("Enter the genre you want to collect data for: ")
@@ -28,8 +31,9 @@ def get_genre():
         return get_genre()  # Recursively ask until a valid match is found
 
 
+
 # Function to list and select a file by number
-def select_file_by_number(genre, mode):
+def select_file_by_number(genre, mode="500"):
     # Directory where data files are saved
     directory = "../DataCollection"
     # Find all matching files
@@ -53,7 +57,6 @@ def select_file_by_number(genre, mode):
     else:
         print("Invalid selection.")
         return None
-    
 
 # "All"
 #filterColumns = [
@@ -67,10 +70,25 @@ filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","
     "Instrumentalness", "Liveness", "Valence", "Tempo"]
 
 
+operation_mode = input("Choose an option: 1. Collect new data by genre & Run\n2. Run model on existing file\n3. Run model on all files in directory(not yet implemented)")
+genre=""
+input_file=""
+dataCollect=""
+if (operation_mode == "1"):
+    genre = input("Enter genre name: ")
+    dataCollect = dataCollection(genre)
+    dataCollect.collect()
+    input_file = genre +"_"+"500_tracks.csv"
+
+elif (operation_mode == 2):
+    input_file = input("Enter file name: ")
+
+
 #input_file = input("Enter the filename you to use: ")
-genre = get_genre()
-mode = input("Enter 'single' or 'all' based on the mode used for data collection: ")
-input_file = select_file_by_number(genre, mode)  # File path to CSV data
+#genre = get_genre()
+mode="500"
+#mode = input("Enter 'single' or 'all' based on the mode used for data collection: ")
+#input_file = select_file_by_number(genre, mode)  # File path to CSV data
 # Check if a file was selected
 if input_file:
     print(f"Using file: {input_file}")
