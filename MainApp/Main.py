@@ -69,19 +69,28 @@ def select_file_by_number(genre, mode="500"):
 filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","Loudness", "Speechiness", "Acousticness",
     "Instrumentalness", "Liveness", "Valence", "Tempo"]
 
+def getDataFiles(directory='Datasets'):
+    return os.listdir(directory)
 
-operation_mode = input("Choose an option: \n1. Collect new data by genre & Run\n2. Run model on existing file (not yet implemented)\n3. Run model on all files in directory(not yet implemented)")
+operation_mode = input("Choose an option: \n1. Collect new data by genre & Run\n2. Run model on existing file\n3. Run model on all files in directory(not yet implemented)")
 genre=""
 input_file=""
 dataCollect=""
+DSDirectory = 'Datasets'
 if (operation_mode == "1"):
     genre = input("Enter genre name: ")
-    dataCollect = dataCollection(genre)
+    dataCollect = dataCollection(genre, DSDirectory)
     dataCollect.collect()
-    input_file = genre +"_"+"500_tracks.csv"
+    input_file = DSDirectory + "/" + genre +"_"+"500_tracks.csv"
 
-elif (operation_mode == 2):
-    input_file = input("Enter file name: ")
+elif (operation_mode == "2"):
+    print("Available Datasets:")
+    datasets = getDataFiles(DSDirectory)
+    count = 1
+    for filename in datasets:
+       print(f"{count}. {filename}")
+    file_choice = datasets[int(input("Enter file number: ")) - 1]
+    input_file = DSDirectory + "/" + file_choice
 
 
 #input_file = input("Enter the filename you to use: ")
@@ -149,7 +158,7 @@ print(f'Mean absolute error: {test_mae:.4f}')
 print(f'Mean squared error: {test_mse:.4f}')
 print(f'Root mean squared error: {test_rmse:.4f}')
 print(f'R-squared: {test_r2:.4f}')
-print(f'----Weights----')
+print(f'----Weights (WIP)----')
 #print(f'weights1 {model.get_layer("dense").weights}')
 #print(f'weights2 {model.get_layer("dense_1").weights}')
 #print(f'weights3 {model.get_layer("dense_2").weights}')

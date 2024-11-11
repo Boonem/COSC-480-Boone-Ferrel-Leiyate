@@ -10,8 +10,9 @@ import os
 from DataStorage import DataStorage 
 
 class dataCollection:
-    def __init__(self, genre=""):
+    def __init__(self, genre="", dir="Datasets"):
         self.genre = genre
+        self.dir = dir
 
         
     def collect(self):
@@ -89,7 +90,7 @@ class dataCollection:
         # display_track_info(tracks, audio_features)  # Commented out for now
 
         # Save track and audio feature data to CSV
-        filename = f"{self.genre}_500_tracks.csv"  # Create filename based on genre and mode
+        filename = f"{self.dir}/{self.genre}_500_tracks.csv"  # Create filename based on genre and mode
         storage = DataStorage(filename)
         headers = ['Track_Name', 'Track Duration (ms)', 'Popularity', 'Danceability', 'Energy', 'Loudness', 'Tempo', 'Acousticness', 
                 'Speechiness', 'Instrumentalness', 'Liveness', 'Valence']
