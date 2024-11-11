@@ -72,7 +72,7 @@ filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","
 def getDataFiles(directory='Datasets'):
     return os.listdir(directory)
 
-operation_mode = input("Choose an option: \n1. Collect new data by genre & Run\n2. Run model on existing file\n3. Run model on all files in directory(not yet implemented)")
+operation_mode = input("Choose an option: \n1. Collect new data by genre & Run\n2. Run model on existing file\n3. Run model on all files in directory(not yet implemented)\n4. Get song genres\n")
 genre=""
 input_file=""
 dataCollect=""
@@ -91,6 +91,11 @@ elif (operation_mode == "2"):
        print(f"{count}. {filename}")
     file_choice = datasets[int(input("Enter file number: ")) - 1]
     input_file = DSDirectory + "/" + file_choice
+
+elif (operation_mode == "4"):
+    id = input("enter track id:")
+    dataCollect = dataCollection()
+    print(dataCollection.getSongGenres(id))
 
 
 #input_file = input("Enter the filename you to use: ")

@@ -14,7 +14,25 @@ class dataCollection:
         self.genre = genre
         self.dir = dir
 
-        
+    def getSongGenres(id):
+        # Get API Ids from .env
+        load_dotenv()
+
+        cid = os.getenv('client_id')
+        secret = os.getenv('client_secret')
+
+        if cid is None or secret is None:
+            raise ValueError("Client ID and Client Secret not found. Please make sure they are set in the .env file.")
+
+        # Apply API Ids for Spotipy
+        client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
+        sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
+        track = sp.track(id)
+        artist_id = track['artists'][0]['id']
+        artist = sp.artist(artist_id)
+
+        return artist.get('genres', [])
     def collect(self):
         sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
