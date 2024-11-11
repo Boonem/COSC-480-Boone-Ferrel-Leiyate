@@ -28,9 +28,13 @@ class dataCollection:
         client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
         sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
+
+        #Get first artist from track
         track = sp.track(id)
+        print(f"Getting primary artist for {track['name']}...")
         artist_id = track['artists'][0]['id']
         artist = sp.artist(artist_id)
+        print(f"Getting genres for {artist['name']}...")
 
         return artist.get('genres', [])
     def collect(self):
