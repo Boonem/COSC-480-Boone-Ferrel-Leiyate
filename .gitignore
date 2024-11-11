@@ -162,4 +162,4 @@ cython_debug/
 #.idea/
 
 #Adding .csv files to ignore list
-.csv
+*.csv
