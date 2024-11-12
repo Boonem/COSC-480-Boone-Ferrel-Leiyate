@@ -168,11 +168,11 @@ for dr in [0, 0.1, 0.2, 0.3, 0.4, 0.5]:
         for ls in [[64, 32, 16], [128, 64, 32], [64, 64], [256, 128, 64], [128, 64, 32]]:
             for l2 in [0, 0.0001, 0.001, 0.01]:
                 for e in [25, 50, 75, 100, 125]:
-                    print(f"Evaluating model "+model_count+":")
-                    print(f"\tDropout rate: "+dr)
-                    print(f"\tBatch norm: "+bn)
-                    print(f"\tLayer sizes: "+ls)
-                    print(f"\tl2 reg: "+l2)
+                    print(f"Evaluating model "+str(model_count)+":")
+                    print(f"\tDropout rate: "+str(dr))
+                    print(f"\tBatch norm: "+str(bn))
+                    print(f"\tLayer sizes: "+str(ls))
+                    print(f"\tl2 reg: "+str(l2))
 
                     model = build_model(
                         input_shape=(X_train.shape[1],), 
