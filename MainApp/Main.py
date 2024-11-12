@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
-from keras import layers
+from keras import layers, regularizers
 from fuzzywuzzy import process
 from DataCollection import dataCollection
 
@@ -134,37 +134,69 @@ def prepare_data(records):
 
     return X_train, X_test, y_train, y_test
 
-def build_model(input_shape):
-    layers1 = layers.Dense(64, activation='relu', input_shape=input_shape)
-    layers2 = layers.Dense(32, activation='relu')
-    layers3 = layers.Dense(16, activation='relu')
-    layers4 = layers.Dense(1)
-    model = keras.Sequential([
-        layers1,
-        layers2,
-        layers3,
-        layers4
-    ])
+def build_model(input_shape, dropout_rate, batch_norm, layer_sizes=[64, 32, 16], l2_reg=0.0):
+    model = keras.Sequential()
+    
+    # First layer
+    model.add(layers.Dense(layer_sizes[0], activation='relu', input_shape=input_shape,
+                           kernel_regularizer=regularizers.l2(l2_reg)))
+    if batch_norm:
+        model.add(layers.BatchNormalization())
+    if dropout_rate > 0:
+        model.add(layers.Dropout(dropout_rate))
+    
+    # Hidden layers
+    for size in layer_sizes[1:]:
+        model.add(layers.Dense(size, activation='relu', kernel_regularizer=regularizers.l2(l2_reg)))
+        if batch_norm:
+            model.add(layers.BatchNormalization())
+        if dropout_rate > 0:
+            model.add(layers.Dropout(dropout_rate))
+    
+    # Output layer
+    model.add(layers.Dense(1))
+    
     model.compile(optimizer='adam', loss='mean_absolute_error', metrics=['mean_absolute_error'])
     return model
 
 X_train, X_test, y_train, y_test = prepare_data(read_csv())
 
-model = build_model((X_train.shape[1],))
-model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)
 
-y_pred = model.predict(X_test).flatten()
-test_loss, test_mae = model.evaluate(X_test, y_test)
-test_mse = mean_squared_error(y_test, y_pred)
-test_rmse = np.sqrt(test_mse)
-test_r2 = r2_score(y_test, y_pred)
-print(f'Genre: {genre}')
-print(f'Mean absolute error: {test_mae:.4f}')
-print(f'Mean squared error: {test_mse:.4f}')
-print(f'Root mean squared error: {test_rmse:.4f}')
-print(f'R-squared: {test_r2:.4f}')
-print(f'----Weights (WIP)----')
-#print(f'weights1 {model.get_layer("dense").weights}')
-#print(f'weights2 {model.get_layer("dense_1").weights}')
-#print(f'weights3 {model.get_layer("dense_2").weights}')
-#print(f'weights4 {model.get_layer("dense_3").weights}')
+model_count = 0
+for dr in [0, 0.1, 0.2, 0.3, 0.4, 0.5]:
+    for bn in [True, False]:
+        for ls in [[64, 32, 16], [128, 64, 32], [64, 64], [256, 128, 64], [128, 64, 32]]:
+            for l2 in [0, 0.0001, 0.001, 0.01]:
+                for e in [25, 50, 75, 100, 125]:
+                    print(f"Evaluating model "+model_count+":")
+                    print(f"\tDropout rate: "+dr)
+                    print(f"\tBatch norm: "+bn)
+                    print(f"\tLayer sizes: "+ls)
+                    print(f"\tl2 reg: "+l2)
+
+                    model = build_model(
+                        input_shape=(X_train.shape[1],), 
+                        dropout_rate=dr, 
+                        batch_norm=bn, 
+                        layer_sizes=ls, 
+                        l2_reg=l2
+                    )
+
+                    model.fit(X_train, y_train, epochs=e, batch_size=32, validation_split=0.2)
+                    y_pred = model.predict(X_test).flatten()
+                    test_loss, test_mae = model.evaluate(X_test, y_test)
+                    test_mse = mean_squared_error(y_test, y_pred)
+                    test_rmse = np.sqrt(test_mse)
+                    test_r2 = r2_score(y_test, y_pred)
+                    print(f'\tGenre: {genre}')
+                    print(f'\tMean absolute error: {test_mae:.4f}')
+                    print(f'\tMean squared error: {test_mse:.4f}')
+                    print(f'\tRoot mean squared error: {test_rmse:.4f}')
+                    print(f'\tR-squared: {test_r2:.4f}')
+                    print(f'\t----Weights (WIP)----')
+                    #print(f'weights1 {model.get_layer("dense").weights}')
+                    #print(f'weights2 {model.get_layer("dense_1").weights}')
+                    #print(f'weights3 {model.get_layer("dense_2").weights}')
+                    #print(f'weights4 {model.get_layer("dense_3").weights}')
+
+                    model_count += 1
