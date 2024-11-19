@@ -15,7 +15,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 #Commented out following two lines until needed
 # List of predefined genres(test for fuzzywuzzy, add for more)
-#available_genres = ["rock", "pop", "jazz", "classical", "hip-hop", "country"]
+available_genres = ["rock", "pop", "jazz", "classical", "hip-hop", "country"]
 
 
 
@@ -161,42 +161,47 @@ def build_model(input_shape, dropout_rate, batch_norm, layer_sizes=[64, 32, 16],
 
 X_train, X_test, y_train, y_test = prepare_data(read_csv())
 
+output_file = open("sample_run.txt", "w")
 
+output_file.write(f"#\tDR\tBN\tLS\tL2\tE\t\tMAE\tMSE\tRMSE\tR2")
 model_count = 0
 for dr in [0, 0.1, 0.2, 0.3, 0.4, 0.5]:
-    for bn in [True, False]:
-        for ls in [[64, 32, 16], [128, 64, 32], [64, 64], [256, 128, 64], [128, 64, 32]]:
-            for l2 in [0, 0.0001, 0.001, 0.01]:
-                for e in [25, 50, 75, 100, 125]:
-                    print(f"Evaluating model "+str(model_count)+":")
-                    print(f"\tDropout rate: "+str(dr))
-                    print(f"\tBatch norm: "+str(bn))
-                    print(f"\tLayer sizes: "+str(ls))
-                    print(f"\tl2 reg: "+str(l2))
+    # output_file.write(f"\nDropout rate set to: "+str(dr))
+    # for bn in [True, False]:
+    # output_file.write(f"\nBatch normalization set to: "+str(bn))
+    for ls in [[64, 32, 16], [128, 64, 32], [64, 64], [256, 128, 64], [128, 64, 32]]:
+        # output_file.write(f"\nLayer sizes set to: "+str(ls))
+        for l2 in [0, 0.0001, 0.001, 0.01]:
+            # output_file.write(f"\nl2 set to: "+str(l2))
+            for e in [25, 50, 75, 100, 125]:
+                # output_file.write(f"\nEpochs set to: "+str(e))
+                model = build_model(
+                    input_shape=(X_train.shape[1],), 
+                    dropout_rate=dr, 
+                    batch_norm=False, 
+                    layer_sizes=ls, 
+                    l2_reg=l2
+                )
 
-                    model = build_model(
-                        input_shape=(X_train.shape[1],), 
-                        dropout_rate=dr, 
-                        batch_norm=bn, 
-                        layer_sizes=ls, 
-                        l2_reg=l2
-                    )
+                model.fit(X_train, y_train, epochs=e, batch_size=32, validation_split=0.2)
+                y_pred = model.predict(X_test).flatten()
+                test_loss, test_mae = model.evaluate(X_test, y_test)
+                test_mse = mean_squared_error(y_test, y_pred)
+                test_rmse = np.sqrt(test_mse)
+                test_r2 = r2_score(y_test, y_pred)
+                output_file.write(f'\n{model_count}\t{dr}\t{False}\t{ls}\t{l2}\t{e}\t\t{test_mae:.4f}\t{test_mse:.4f}\t{test_rmse:.4f}\t{test_r2:.4f}')
 
-                    model.fit(X_train, y_train, epochs=e, batch_size=32, validation_split=0.2)
-                    y_pred = model.predict(X_test).flatten()
-                    test_loss, test_mae = model.evaluate(X_test, y_test)
-                    test_mse = mean_squared_error(y_test, y_pred)
-                    test_rmse = np.sqrt(test_mse)
-                    test_r2 = r2_score(y_test, y_pred)
-                    print(f'\tGenre: {genre}')
-                    print(f'\tMean absolute error: {test_mae:.4f}')
-                    print(f'\tMean squared error: {test_mse:.4f}')
-                    print(f'\tRoot mean squared error: {test_rmse:.4f}')
-                    print(f'\tR-squared: {test_r2:.4f}')
-                    print(f'\t----Weights (WIP)----')
-                    #print(f'weights1 {model.get_layer("dense").weights}')
-                    #print(f'weights2 {model.get_layer("dense_1").weights}')
-                    #print(f'weights3 {model.get_layer("dense_2").weights}')
-                    #print(f'weights4 {model.get_layer("dense_3").weights}')
+                # output_file.write(f'\nModel: {model_count}')
+                # output_file.write(f'\n\tMean absolute error: {test_mae:.4f}')
+                # output_file.write(f'\n\tMean squared error: {test_mse:.4f}')
+                # output_file.write(f'\n\tRoot mean squared error: {test_rmse:.4f}')
+                # output_file.write(f'\n\tR-squared: {test_r2:.4f}')
+                #output_file.write(f'\t----Weights (WIP)----')
+                #print(f'weights1 {model.get_layer("dense").weights}')
+                #print(f'weights2 {model.get_layer("dense_1").weights}')
+                #print(f'weights3 {model.get_layer("dense_2").weights}')
+                #print(f'weights4 {model.get_layer("dense_3").weights}')
 
-                    model_count += 1
+                model_count += 1
+
+output_file.close()
