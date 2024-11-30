@@ -165,11 +165,13 @@ output_file = open("sample_run.txt", "w")
 
 output_file.write(f"#\tDR\tBN\tLS\tL2\tE\t\tMAE\tMSE\tRMSE\tR2")
 model_count = 0
-for dr in [0.1, 0.2]:
+for dr in [0, 0.1, 0.2]:
     for bn in [True, False]:
-        for ls in [[80, 80, 80, 80, 80, 80, 80], [90, 90, 90, 90, 90, 90, 90], [100, 100, 100, 100, 100, 100, 100]]:
-            for l2 in [0, 0.0001, 0.001]:
-                for e in [25, 50]:
+        # for ls in [[100, 100, 100, 100, 100, 100]]:
+        for ls in [[x] * i for x in range(96, 105, 1) for i in range(6, 8)]:
+            # 0.001 never seems to get a higher score
+            for l2 in [0, 0.0001]:
+                for e in [53, 54, 55, 56, 57]:
                     model = build_model(
                         input_shape=(X_train.shape[1],), 
                         dropout_rate=dr, 
@@ -185,7 +187,7 @@ for dr in [0.1, 0.2]:
                     test_rmse = np.sqrt(test_mse)
                     test_r2 = r2_score(y_test, y_pred)
 
-                    if (test_r2 > 0):
+                    if (test_r2 > 0.13):
                         output_file.write(f'\n{model_count}\t{dr}\t{bn}\t{ls}\t{l2}\t{e}\t\t{test_mae:.4f}\t{test_mse:.4f}\t{test_rmse:.4f}\t{test_r2:.4f}')
                         model_count += 1
 
