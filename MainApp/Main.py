@@ -72,16 +72,28 @@ filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","
 def getDataFiles(directory='Datasets'):
     return os.listdir(directory)
 
-operation_mode = input("Choose an option: \n1. Collect new data by genre & Run\n2. Run model on existing file\n3. Run model on all files in directory(not yet implemented)\n4. Get song genres\n")
+operation_mode = input("Choose an option (UPDATED): \n1. Run model on existing file(WIP)\n2. Run Parameter Tests\n3. Test single Song(WIP)\n")
 genre=""
 input_file=""
 dataCollect=""
 DSDirectory = 'Datasets'
+
+#Old option 1 before spotify API changes
+#if (operation_mode == "1"):
+    #genre = input("Enter genre name: ")
+    #dataCollect = dataCollection(genre, DSDirectory)
+    #dataCollect.collect()
+    #input_file = DSDirectory + "/" + genre +"_"+"500_tracks.csv"
+
 if (operation_mode == "1"):
-    genre = input("Enter genre name: ")
-    dataCollect = dataCollection(genre, DSDirectory)
-    dataCollect.collect()
-    input_file = DSDirectory + "/" + genre +"_"+"500_tracks.csv"
+    print("Available Datasets:")
+    datasets = getDataFiles(DSDirectory)
+    count = 1
+    for filename in datasets:
+       print(f"{count}. {filename}")
+       count= count+1
+    file_choice = datasets[int(input("Enter file number: ")) - 1]
+    input_file = DSDirectory + "/" + file_choice
 
 elif (operation_mode == "2"):
     print("Available Datasets:")
@@ -89,13 +101,25 @@ elif (operation_mode == "2"):
     count = 1
     for filename in datasets:
        print(f"{count}. {filename}")
+       count= count+1
     file_choice = datasets[int(input("Enter file number: ")) - 1]
     input_file = DSDirectory + "/" + file_choice
 
-elif (operation_mode == "4"):
-    id = input("enter track id:")
-    dataCollect = dataCollection()
-    print(dataCollection.getSongGenres(id))
+elif (operation_mode == "3"):
+    print("Available Datasets:")
+    datasets = getDataFiles(DSDirectory)
+    count = 1
+    for filename in datasets:
+       print(f"{count}. {filename}")
+       count= count+1
+    file_choice = datasets[int(input("Enter file number: ")) - 1]
+    input_file = DSDirectory + "/" + file_choice
+
+#Old option 4
+#elif (operation_mode == "4"):
+    #id = input("enter track id:")
+    #dataCollect = dataCollection()
+    #print(dataCollection.getSongGenres(id))
 
 
 #input_file = input("Enter the filename you to use: ")
