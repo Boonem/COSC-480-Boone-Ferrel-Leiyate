@@ -93,7 +93,7 @@ filterColumns = ["Track_Name", "Track Duration (ms)", "Popularity", "Danceabilit
 def getDataFiles(directory='Datasets'):
     return os.listdir(directory)
 
-operation_mode = input("Choose an option (UPDATED): \n1. Run model on existing file\n2. Run Parameter Tests\n3. Test single Song(WIP)\n")
+operation_mode = input("Choose an option (UPDATED): \n1. Run model on existing file\n2. Run Parameter Tests\n3. Test single Song(not working)\n")
 genre=""
 input_file=""
 dataCollect=""
@@ -320,5 +320,6 @@ if (operation_mode == "3"):
 
     print(f"\tDR\tBN\tLS\t\t\t\tL2\tE\t\tMAE\tMSE\tRMSE\tR2")
     print(f'\n\t{optimal_dr}\t{optimal_bn}\t{optimal_ls}\t{optimal_l2}\t{optimal_e}\t\t{test_mae:.4f}\t{test_mse:.4f}\t{test_rmse:.4f}\t{test_r2:.4f}')
-    
+
+    #model.evaluate(X_test, y_test)
     compare_single_prediction(read_csv(), scaler, model, name_to_search)
