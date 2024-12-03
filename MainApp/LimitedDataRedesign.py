@@ -14,7 +14,7 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Pruning attempts for improving prediction
-filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","Loudness",
+filterColumns = ["Track_Name", "Track Duration (ms)", "Popularity", "Danceability", "Energy","Loudness",
                 "Speechiness", "Acousticness", "Instrumentalness", "Liveness", "Valence"]
 
 def getDataFiles(directory='Datasets'):
@@ -94,7 +94,7 @@ class TestRecord:
 # Loads data from TestRecord instances
 def prepare_data(records):
     # Postures everything except popularity as input, and only popularity as output
-    X = np.array([[getattr(record, col) for col in record.__dict__ if col != 'Popularity'] for record in records])
+    X = np.array([[getattr(record, col) for col in record.__dict__ if col != 'Popularity' and col != 'Track_Name'] for record in records])
     y = np.array([record.Popularity for record in records])
 
     # Normalize data
@@ -103,7 +103,7 @@ def prepare_data(records):
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
 
-    return X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test, scaler
 
 def build_model(input_shape, dropout_rate, batch_norm, layer_sizes=[64, 32, 16], l2_reg=0.0):
     model = keras.Sequential()
@@ -130,9 +130,9 @@ def build_model(input_shape, dropout_rate, batch_norm, layer_sizes=[64, 32, 16],
     model.compile(optimizer='sgd', loss='mean_absolute_error', metrics=['mean_absolute_error'])
     return model
 
-X_train, X_test, y_train, y_test = prepare_data(read_csv())
+X_train, X_test, y_train, y_test, scaler = prepare_data(read_csv())
 # Enjoy the silence
-keras.utils.disable_interactive_logging()
+#keras.utils.disable_interactive_logging()
 
 model = build_model(
     input_shape=(X_train.shape[1],), 
@@ -142,10 +142,57 @@ model = build_model(
     l2_reg=0.0001
 )
 
-model.fit(X_train, y_train, epochs=e, batch_size=32, validation_split=0.2, verbose=0)
+model.fit(X_train, y_train, epochs=60, batch_size=32, validation_split=0.2, verbose=0)
 y_pred = model.predict(X_test).flatten()
 test_loss, test_mae = model.evaluate(X_test, y_test)
 test_mse = mean_squared_error(y_test, y_pred)
 test_rmse = np.sqrt(test_mse)
 test_r2 = r2_score(y_test, y_pred)
 
+#Function to find and return record for a track searched by name in a record set
+def get_single_song_record(song_name,records):
+    #set up variables
+    name_lowered= song_name.lower()
+    top_match= None
+    top_ratio=0
+
+    #iterate through records
+    for record in records:
+        #sort by best match
+        match_ratio= fuzz.token_sort_ratio(name_lowered,record.Track_Name.lower())
+        #set ratio to top ratio if best so far
+        if top_ratio<match_ratio:
+                top_match=record
+                top_ratio=match_ratio
+
+    return top_match,top_ratio
+
+#Function that takes a trained model and a track name and prints
+# an analysis of how over/underrated the song is based on the
+# difference between the actual and predicted popularity
+def compare_single_prediction(records, scaler, model, song_name):
+    #get a song that matches
+    target_song, accuracy = get_single_song_record(song_name, records)
+    
+
+    if not(target_song):
+        print("No match for song found.")
+
+    else:
+        print(f"Match found: {target_song.Track_Name} accuracy: {accuracy}%")
+        #prepare features
+        audio_features = scaler.transform([[getattr(target_song, col) for col in filterColumns if col not in ['Track_Name', 'Popularity']]])
+        
+        actual_pop = target_song.Popularity
+
+        predicted_pop = model.predict(audio_features).flatten()[0]
+
+        #calculate difference and print results
+        difference = predicted_pop - actual_pop
+        over_under = "underrated" if difference > 0 else "overrated"
+        print(f"Recorded Popularity: {actual_pop:.2f}")
+        print(f"Predicted Popularity: {predicted_pop:.2f}")
+        print(f"This song is {over_under} by {abs(difference):.2f}")
+
+model.evaluate(X_test, y_test)
+compare_single_prediction(read_csv(), scaler, model, name_to_search)
