@@ -114,6 +114,12 @@ elif (operation_mode == "3"):
        count= count+1
     file_choice = datasets[int(input("Enter file number: ")) - 1]
     input_file = DSDirectory + "/" + file_choice
+    #Need to add 
+    #
+    #
+    #
+    #
+    #
 
 #Old option 4
 #elif (operation_mode == "4"):
@@ -122,8 +128,6 @@ elif (operation_mode == "3"):
     #print(dataCollection.getSongGenres(id))
 
 
-#input_file = input("Enter the filename you to use: ")
-#genre = get_genre()
 mode="500"
 #mode = input("Enter 'single' or 'all' based on the mode used for data collection: ")
 #input_file = select_file_by_number(genre, mode)  # File path to CSV data
