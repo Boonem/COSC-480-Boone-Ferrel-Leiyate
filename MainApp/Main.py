@@ -72,7 +72,7 @@ filterColumns = ["Track Duration (ms)", "Popularity", "Danceability", "Energy","
 def getDataFiles(directory='Datasets'):
     return os.listdir(directory)
 
-operation_mode = input("Choose an option (UPDATED): \n1. Run model on existing file(WIP)\n2. Run Parameter Tests\n3. Test single Song(WIP)\n")
+operation_mode = input("Choose an option (UPDATED): \n1. Run model on existing file\n2. Run Parameter Tests\n3. Test single Song(WIP)\n")
 genre=""
 input_file=""
 dataCollect=""
@@ -185,34 +185,63 @@ def build_model(input_shape, dropout_rate, batch_norm, layer_sizes=[64, 32, 16],
 
 X_train, X_test, y_train, y_test = prepare_data(read_csv())
 
-output_file = open("sample_run.txt", "w")
+#
+#
+#Update these values whenever better parameters are found
+optimal_dr=0.1
+optimal_bn=False
+optimal_ls=[128, 128, 128, 128, 128, 128]
+optimal_l2=0.0001
+optimal_e=57
 
-output_file.write(f"#\tDR\tBN\tLS\tL2\tE\t\tMAE\tMSE\tRMSE\tR2")
-model_count = 0
-for dr in [0, 0.1, 0.2]:
-    for bn in [True, False]:
-        # for ls in [[100, 100, 100, 100, 100, 100]]:
-        for ls in [[x] * i for x in range(96, 105, 1) for i in range(6, 8)]:
-            # 0.001 never seems to get a higher score
-            for l2 in [0, 0.0001]:
-                for e in [53, 54, 55, 56, 57]:
-                    model = build_model(
-                        input_shape=(X_train.shape[1],), 
-                        dropout_rate=dr, 
-                        batch_norm=False, 
-                        layer_sizes=ls, 
-                        l2_reg=l2
-                    )
+#Standard model running, update with 
+if (operation_mode == "1"):
+    model = build_model(
+        input_shape=(X_train.shape[1],), 
+        dropout_rate=optimal_dr, 
+        batch_norm=optimal_bn, 
+        layer_sizes=optimal_ls, 
+        l2_reg=optimal_l2
+    )
 
-                    model.fit(X_train, y_train, epochs=e, batch_size=32, validation_split=0.2)
-                    y_pred = model.predict(X_test).flatten()
-                    test_loss, test_mae = model.evaluate(X_test, y_test)
-                    test_mse = mean_squared_error(y_test, y_pred)
-                    test_rmse = np.sqrt(test_mse)
-                    test_r2 = r2_score(y_test, y_pred)
+    model.fit(X_train, y_train, epochs=optimal_e, batch_size=32, validation_split=0.2)
+    y_pred = model.predict(X_test).flatten()
+    test_loss, test_mae = model.evaluate(X_test, y_test)
+    test_mse = mean_squared_error(y_test, y_pred)
+    test_rmse = np.sqrt(test_mse)
+    test_r2 = r2_score(y_test, y_pred)
 
-                    if (test_r2 > 0.13):
-                        output_file.write(f'\n{model_count}\t{dr}\t{bn}\t{ls}\t{l2}\t{e}\t\t{test_mae:.4f}\t{test_mse:.4f}\t{test_rmse:.4f}\t{test_r2:.4f}')
-                        model_count += 1
+    print(f"\tDR\tBN\tLS\t\t\t\tL2\tE\t\tMAE\tMSE\tRMSE\tR2")
+    print(f'\n\t{optimal_dr}\t{optimal_bn}\t{optimal_ls}\t{optimal_l2}\t{optimal_e}\t\t{test_mae:.4f}\t{test_mse:.4f}\t{test_rmse:.4f}\t{test_r2:.4f}')
 
-output_file.close()
+if (operation_mode == "2"):
+    output_file = open("sample_run.txt", "w")
+    output_file.write(f"#\tDR\tBN\tLS\tL2\tE\t\tMAE\tMSE\tRMSE\tR2")
+    model_count = 0
+    for dr in [0, 0.1, 0.2]:
+        for bn in [True, False]:
+            # for ls in [[100, 100, 100, 100, 100, 100]]:
+            for ls in [[x] * i for x in range(96, 105, 1) for i in range(6, 8)]:
+                # 0.001 never seems to get a higher score
+                for l2 in [0, 0.0001]:
+                    for e in [53, 54, 55, 56, 57]:
+                        model = build_model(
+                            input_shape=(X_train.shape[1],), 
+                            dropout_rate=dr, 
+                            batch_norm=False, 
+                            layer_sizes=ls, 
+                            l2_reg=l2
+                        )
+
+                        model.fit(X_train, y_train, epochs=e, batch_size=32, validation_split=0.2)
+                        y_pred = model.predict(X_test).flatten()
+                        test_loss, test_mae = model.evaluate(X_test, y_test)
+                        test_mse = mean_squared_error(y_test, y_pred)
+                        test_rmse = np.sqrt(test_mse)
+                        test_r2 = r2_score(y_test, y_pred)
+
+                        if (test_r2 > 0.13):
+                            output_file.write(f'\n{model_count}\t{dr}\t{bn}\t{ls}\t{l2}\t{e}\t\t{test_mae:.4f}\t{test_mse:.4f}\t{test_rmse:.4f}\t{test_r2:.4f}')
+                            model_count += 1
+
+    output_file.close()
