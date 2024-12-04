@@ -7,6 +7,9 @@ from tensorflow import keras
 from keras import layers, regularizers
 from fuzzywuzzy import fuzz
 from DataCollection import dataCollection
+from flask_cors import CORS
+
+
 
 import os
 
@@ -16,6 +19,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 # Pruning attempts for improving prediction
 filterColumns = ["Track_Name", "Track Duration (ms)", "Popularity", "Danceability", "Energy","Loudness",
                 "Speechiness", "Acousticness", "Instrumentalness", "Liveness", "Valence"]
+
+
 
 def getDataFiles(directory='Datasets'):
     return os.listdir(directory)

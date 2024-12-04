@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Popularity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2b5f99, #5b71bd);
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #599ac0;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        .container {
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #1f9d8f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #3e8a2f;
+        }
+        select, input {
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        select {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        input {
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+        .hidden {
+            display: none;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Music Popularity</h1>
+    </header>
+    <div class="container" id="home-page">
+        <button id="mainBtn">Run Main.py</button>
+        <button id="limitedBtn">Run LimitedDataRedesign.py</button>
+    </div>
+    
+    <div class="container hidden" id="main-page">
+        <select id="dataset">
+            <option value="">Select Dataset</option>
+        </select>
+        <br>
+        <button id="runModel">Run Model on Existing File</button>
+        <button id="runTests">Run Parameter Tests</button>
+        <button id="testSong">Test Single Song (Not Working)</button>
+        <button id="backToHomeMain">Back</button>
+    </div>
+    
+    <div class="container hidden" id="limited-page">
+        <input type="text" id="songName" placeholder="Enter Song Name">
+        <br>
+        <button id="runLimited">Run LimitedDataRedesign.py</button>
+        <button id="backToHomeLimited">Back</button>
+    </div>
+    
+
+    <div id="results" class="container"></div>
+    <script src="app.js"></script>
+</body>
+</html>

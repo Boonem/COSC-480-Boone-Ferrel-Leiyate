@@ -7,11 +7,129 @@ from tensorflow import keras
 from keras import layers, regularizers
 from fuzzywuzzy import fuzz
 from DataCollection import dataCollection
-
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import subprocess
 import os
+
 
 # Sets file navigation to the script's folder
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+from flask import Flask, request, jsonify
+import os
+
+app = Flask(__name__)
+CORS(app)
+
+DATASETS_DIR = os.path.join(os.getcwd(), "Datasets")
+
+
+# List datasets
+@app.route('/list-datasets', methods=['GET'])
+def list_datasets():
+    """
+    This endpoint lists all available datasets (CSV files) in the 'Datasets' directory.
+    """
+    try:
+        # Ensure the dataset directory exists
+        if not os.path.exists(DATASETS_DIR):
+            print(f"Error: Dataset directory {DATASETS_DIR} does not exist.")
+            return jsonify({"error": "Dataset directory does not exist"}), 500
+
+        # List all .csv files
+        datasets = [f for f in os.listdir(DATASETS_DIR) if f.endswith(".csv")]
+        print(f"Datasets found: {datasets}") 
+
+        if not datasets:
+            return jsonify({"error": "No datasets found in the directory"}), 404
+
+        return jsonify({"datasets": datasets})
+
+    except Exception as e:
+        print(f"Error in list_datasets(): {e}")
+        return jsonify({"error": str(e)}), 500
+
+    
+#Main.py 
+@app.route('/run-main', methods=['POST'])
+def run_main():
+    """
+    This endpoint triggers the Main.py logic based on the provided action and dataset.
+    """
+    try:
+        # Parse JSON data from the request
+        data = request.json
+        print(f"Request data: {data}")
+
+        # Validate required parameters
+        action = data.get("action")
+        dataset = data.get("dataset")
+
+        if not action or not dataset:
+            return jsonify({"error": "Action and dataset are required"}), 400
+
+        # Validate dataset file
+        dataset_path = os.path.join(DATASETS_DIR, dataset)
+        if not os.path.exists(dataset_path):
+            print(f"Error: Dataset file {dataset_path} does not exist.") 
+            return jsonify({"error": f"Dataset file '{dataset}' does not exist"}), 404
+
+        command = ["python", "Main.py"]
+        input_data = f"{action}\n{dataset_path}\n"
+
+        print(f"Executing command: {command} with input: {input_data}")  # Debugging output
+
+        process = subprocess.Popen(
+            command,
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        stdout, stderr = process.communicate(input=input_data)
+
+        if process.returncode == 0:
+            print(f"Command output: {stdout}") 
+            return jsonify({"output": stdout})
+        else:
+            print(f"Command error: {stderr}")  
+            return jsonify({"error": stderr}), 500
+
+    except Exception as e:
+        print(f"Error in run_main(): {e}") 
+        return jsonify({"error": str(e)}), 500
+
+
+#run LimitedDataRedesign.py()
+@app.route('/run-limited', methods=['POST'])
+def run_limited():
+    data = request.json
+    song_name = data.get("song_name")
+
+    if not song_name:
+        return jsonify({"error": "Song name is required"}), 400
+
+    try:
+        # Call LimitedDataRedesign.py 
+        command = ["python", "LimitedDataRedesign.py"]
+        input_data = f"{song_name}\n"
+
+        process = subprocess.Popen(
+            command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+        )
+        stdout, stderr = process.communicate(input=input_data)
+
+        if process.returncode == 0:
+            return jsonify({"output": stdout})
+        else:
+            return jsonify({"error": stderr}), 500
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
 
 #Commented out following two lines until needed
 # List of predefined genres(test for fuzzywuzzy, add for more)
