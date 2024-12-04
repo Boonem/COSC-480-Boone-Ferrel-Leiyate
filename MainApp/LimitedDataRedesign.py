@@ -6,7 +6,6 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
 from keras import layers, regularizers
 from fuzzywuzzy import fuzz
-from DataCollection import dataCollection
 
 import os
 
@@ -27,7 +26,6 @@ def find_name_in_csvs(folder_path, name_to_search):
 
     # Result
     search_name_lower = name_to_search.lower()
-    found = False
     search_result_name = ''
     search_result_accuracy = 0
     search_result_path = ''
@@ -61,19 +59,13 @@ def find_name_in_csvs(folder_path, name_to_search):
 
 # Example Usage
 DSDirectory = 'Datasets'
-name_to_search = input("Enter the name of the song: ")
+name_to_search = input("Hello! Please enter the name of a song: ")
 print(name_to_search)
 search_result_name, search_result_accuracy, search_result_path = find_name_in_csvs(DSDirectory, name_to_search)
 
-print(f"Closest match: {search_result_name} (Accuracy: {search_result_accuracy}%)")
+print(f"I found the song \"{search_result_name}\" ({search_result_accuracy}% sure that's what you meant). Evaluating ...")
 input_file = DSDirectory + "/" + search_result_path
 
-
-#input_file = input("Enter the filename you to use: ")
-#genre = get_genre()
-mode="500"
-#mode = input("Enter 'single' or 'all' based on the mode used for data collection: ")
-#input_file = select_file_by_number(genre, mode)  # File path to CSV data
 # Check if a file was selected
 if input_file:
     print(f"Using file: {input_file}")
@@ -93,7 +85,7 @@ class TestRecord:
 
 # Loads data from TestRecord instances
 def prepare_data(records):
-    # Postures everything except popularity as input, and only popularity as output
+    # Postures everything except popularity/track name as input, and only popularity as output
     X = np.array([[getattr(record, col) for col in record.__dict__ if col != 'Popularity' and col != 'Track_Name'] for record in records])
     y = np.array([record.Popularity for record in records])
 
@@ -126,13 +118,12 @@ def build_model(input_shape, dropout_rate, batch_norm, layer_sizes=[64, 32, 16],
     
     # Output layer
     model.add(layers.Dense(1))
-    
     model.compile(optimizer='sgd', loss='mean_absolute_error', metrics=['mean_absolute_error'])
     return model
 
 X_train, X_test, y_train, y_test, scaler = prepare_data(read_csv())
 # Enjoy the silence
-#keras.utils.disable_interactive_logging()
+keras.utils.disable_interactive_logging()
 
 model = build_model(
     input_shape=(X_train.shape[1],), 
@@ -149,50 +140,43 @@ test_mse = mean_squared_error(y_test, y_pred)
 test_rmse = np.sqrt(test_mse)
 test_r2 = r2_score(y_test, y_pred)
 
-#Function to find and return record for a track searched by name in a record set
-def get_single_song_record(song_name,records):
-    #set up variables
-    name_lowered= song_name.lower()
-    top_match= None
-    top_ratio=0
-
-    #iterate through records
+# Function to find and return record for a track searched by name in a record set
+def test_song(song_name, scaler):
+    records = read_csv()
     for record in records:
-        #sort by best match
-        match_ratio= fuzz.token_sort_ratio(name_lowered,record.Track_Name.lower())
-        #set ratio to top ratio if best so far
-        if top_ratio<match_ratio:
-                top_match=record
-                top_ratio=match_ratio
+        if record.Track_Name.lower() == song_name:
+            record_features = scaler.transform(np.array([[getattr(record, col) for col in record.__dict__ if col != 'Popularity' and col != 'Track_Name']]))
+            predicted_popularity = model.predict([record_features]).flatten()[0]
+            actual_popularity = getattr(record, 'Popularity')
+            return actual_popularity, predicted_popularity
 
-    return top_match,top_ratio
-
-#Function that takes a trained model and a track name and prints
-# an analysis of how over/underrated the song is based on the
-# difference between the actual and predicted popularity
-def compare_single_prediction(records, scaler, model, song_name):
-    #get a song that matches
-    target_song, accuracy = get_single_song_record(song_name, records)
-    
-
-    if not(target_song):
-        print("No match for song found.")
-
-    else:
-        print(f"Match found: {target_song.Track_Name} accuracy: {accuracy}%")
-        #prepare features
-        audio_features = scaler.transform([[getattr(target_song, col) for col in filterColumns if col not in ['Track_Name', 'Popularity']]])
-        
-        actual_pop = target_song.Popularity
-
-        predicted_pop = model.predict(audio_features).flatten()[0]
-
-        #calculate difference and print results
-        difference = predicted_pop - actual_pop
-        over_under = "underrated" if difference > 0 else "overrated"
-        print(f"Recorded Popularity: {actual_pop:.2f}")
-        print(f"Predicted Popularity: {predicted_pop:.2f}")
-        print(f"This song is {over_under} by {abs(difference):.2f}")
+    print(f"Track name {song_name} not found in test data.")
+    return None
 
 model.evaluate(X_test, y_test)
-compare_single_prediction(read_csv(), scaler, model, name_to_search)
+actual_popularity, predicted_popularity = test_song(search_result_name, scaler)
+
+# Arbitrary classification by difference
+def get_opinion(difference):
+    if difference >= 30:
+        return "very overrated (has traits of unpopular songs, but is popular)."
+    elif difference >= 20:
+        return "overrated (has traits of unpopular songs, but is popular)."
+    elif difference >= 10:
+        return "slightly overrated (has traits of unpopular songs, but is popular)."
+    elif difference <= -10:
+        return "slightly underrated (has traits of popular songs, but is unpopular)."
+    elif difference <= -20:
+        return "underrated (has traits of popular songs, but is unpopular)."
+    elif difference <= -30:
+        return "very underrated (has traits of popular songs, but is unpopular)."
+    else:
+        return "predictably rated!"
+        
+
+# Output
+difference = actual_popularity - predicted_popularity
+print("Okay! I think \"" + search_result_name + "\" is " + get_opinion(difference))
+print("Actual popularity: " + str(actual_popularity))
+print("My predicted popularity: " + str(predicted_popularity))
+print("Difference: " + str(difference))
