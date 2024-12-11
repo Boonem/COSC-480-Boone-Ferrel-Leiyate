@@ -180,3 +180,6 @@ print("Okay! I think \"" + search_result_name + "\" is " + get_opinion(differenc
 print("Actual popularity: " + str(actual_popularity))
 print("My predicted popularity: " + str(predicted_popularity))
 print("Difference: " + str(difference))
+
+# Keeps executable from closing instantly when done
+input("Press enter to close application")
